@@ -14,3 +14,13 @@
 - OCR is an architecture boundary and is not implemented.
 - Do not implement ADK, MCP, external context, database, authentication,
   deployment, or frontend redesign inside Work Package 1.
+
+## Instruction Maintenance
+
+- AGENTS.md may be amended when a durable, cross-gate engineering rule is
+  discovered.
+- Do not add temporary task instructions, current defect details, or
+  gate-specific implementation steps.
+- Any AGENTS.md change must be explicitly reported, reviewed, and committed.
+- Test-only verification oracles must never be imported by production code
+  or used to generate production artifacts.
