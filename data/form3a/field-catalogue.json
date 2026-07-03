@@ -1,0 +1,195 @@
+{
+  "catalogue_version": "1.0.0",
+  "source": {
+    "form_id": "SOSS-F3A",
+    "title_en": "Weekly Report to be Prepared by Safety Supervisor Employed on Construction Sites",
+    "title_zh": "受僱在建築地盤工作的安全督導員每週須予填報的報告書",
+    "issuing_authority": "Hong Kong Labour Department",
+    "source_url": "https://www.labour.gov.hk/text_alternative/pdf/eng/SOSS-F3A.pdf",
+    "revision": "Rev. 2002",
+    "page_count": 4
+  },
+  "sections": [
+    {
+      "section_id": "access_and_egress",
+      "label_en": "Access and Egress",
+      "label_zh": "進出口",
+      "page_number": 1,
+      "official_section_order": 1,
+      "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" },
+      "items": [
+        { "item_id": "access_and_egress_gangways", "label_en": "Gangways", "label_zh": "木板路", "page_number": 1, "section_id": "access_and_egress", "official_section_order": 1, "official_item_order": 1, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+        { "item_id": "access_and_egress_ladders", "label_en": "Ladders", "label_zh": "梯", "page_number": 1, "section_id": "access_and_egress", "official_section_order": 1, "official_item_order": 2, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+        { "item_id": "access_and_egress_passageways", "label_en": "Passageways", "label_zh": "通路", "page_number": 1, "section_id": "access_and_egress", "official_section_order": 1, "official_item_order": 3, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+        { "item_id": "access_and_egress_others", "label_en": "Others", "label_zh": "其他", "page_number": 1, "section_id": "access_and_egress", "official_section_order": 1, "official_item_order": 4, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } }
+      ]
+    },
+    {
+      "section_id": "working_at_height",
+      "label_en": "Working at Height",
+      "label_zh": "高空作業",
+      "page_number": 1,
+      "official_section_order": 2,
+      "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" },
+      "items": [
+        { "item_id": "working_at_height_scaffolds", "label_en": "Scaffolds", "label_zh": "棚架", "page_number": 1, "section_id": "working_at_height", "official_section_order": 2, "official_item_order": 1, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+        { "item_id": "working_at_height_working_platforms", "label_en": "Working Platforms", "label_zh": "工作平台", "page_number": 1, "section_id": "working_at_height", "official_section_order": 2, "official_item_order": 2, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+        { "item_id": "working_at_height_floor_edges_openings", "label_en": "Floor Edges/Openings", "label_zh": "樓面邊緣／孔洞", "page_number": 1, "section_id": "working_at_height", "official_section_order": 2, "official_item_order": 3, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+        { "item_id": "working_at_height_lift_shafts_openings", "label_en": "Lift Shafts/Openings", "label_zh": "升降機槽／孔洞", "page_number": 1, "section_id": "working_at_height", "official_section_order": 2, "official_item_order": 4, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+        { "item_id": "working_at_height_others", "label_en": "Others", "label_zh": "其他", "page_number": 1, "section_id": "working_at_height", "official_section_order": 2, "official_item_order": 5, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } }
+      ]
+    },
+    {
+      "section_id": "earthwork",
+      "label_en": "Earthwork",
+      "label_zh": "泥土工程",
+      "page_number": 2,
+      "official_section_order": 3,
+      "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" },
+      "items": [
+        { "item_id": "earthwork_excavations", "label_en": "Excavations", "label_zh": "挖掘工程", "page_number": 2, "section_id": "earthwork", "official_section_order": 3, "official_item_order": 1, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "earthwork_trenches", "label_en": "Trenches", "label_zh": "坑槽", "page_number": 2, "section_id": "earthwork", "official_section_order": 3, "official_item_order": 2, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "earthwork_caissons", "label_en": "Caissons", "label_zh": "沉箱", "page_number": 2, "section_id": "earthwork", "official_section_order": 3, "official_item_order": 3, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "earthwork_tunnels", "label_en": "Tunnels", "label_zh": "隧道", "page_number": 2, "section_id": "earthwork", "official_section_order": 3, "official_item_order": 4, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "earthwork_slopes", "label_en": "Slopes", "label_zh": "斜坡", "page_number": 2, "section_id": "earthwork", "official_section_order": 3, "official_item_order": 5, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "earthwork_others", "label_en": "Others", "label_zh": "其他", "page_number": 2, "section_id": "earthwork", "official_section_order": 3, "official_item_order": 6, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } }
+      ]
+    },
+    {
+      "section_id": "lifting_appliances_and_lifting_gear",
+      "label_en": "Lifting Appliances and Lifting Gear",
+      "label_zh": "起重機械及起重裝置",
+      "page_number": 2,
+      "official_section_order": 4,
+      "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" },
+      "items": [
+        { "item_id": "lifting_cranes", "label_en": "Cranes (e.g. Tower Cranes, Gantry Cranes, Mobile Cranes, etc.)", "label_zh": "起重機（例如：塔式起重機、龍門起重機、流動起重機等）", "page_number": 2, "section_id": "lifting_appliances_and_lifting_gear", "official_section_order": 4, "official_item_order": 1, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "lifting_winches", "label_en": "Winches", "label_zh": "絞車", "page_number": 2, "section_id": "lifting_appliances_and_lifting_gear", "official_section_order": 4, "official_item_order": 2, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "lifting_pulley_blocks", "label_en": "Pulley Blocks", "label_zh": "滑輪組", "page_number": 2, "section_id": "lifting_appliances_and_lifting_gear", "official_section_order": 4, "official_item_order": 3, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "lifting_passenger_hoists", "label_en": "Passenger Hoists", "label_zh": "載人吊重機", "page_number": 2, "section_id": "lifting_appliances_and_lifting_gear", "official_section_order": 4, "official_item_order": 4, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "lifting_material_or_skip_hoists", "label_en": "Material or Skip Hoists, including Hoistway", "label_zh": "物料或吊斗吊重機，包括吊重機槽", "page_number": 2, "section_id": "lifting_appliances_and_lifting_gear", "official_section_order": 4, "official_item_order": 5, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "lifting_suspended_working_platforms", "label_en": "Suspended Working Platforms", "label_zh": "吊船", "page_number": 2, "section_id": "lifting_appliances_and_lifting_gear", "official_section_order": 4, "official_item_order": 6, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "lifting_chains_ropes_hooks_slings", "label_en": "Chains, Ropes, Hooks, Slings", "label_zh": "鏈、纜索、吊鈎、吊索", "page_number": 2, "section_id": "lifting_appliances_and_lifting_gear", "official_section_order": 4, "official_item_order": 7, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "lifting_others", "label_en": "Others", "label_zh": "其他", "page_number": 2, "section_id": "lifting_appliances_and_lifting_gear", "official_section_order": 4, "official_item_order": 8, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } }
+      ]
+    },
+    {
+      "section_id": "electricity",
+      "label_en": "Electricity",
+      "label_zh": "電力",
+      "page_number": 2,
+      "official_section_order": 5,
+      "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" },
+      "items": [
+        { "item_id": "electricity_switches", "label_en": "Switches", "label_zh": "開關掣", "page_number": 2, "section_id": "electricity", "official_section_order": 5, "official_item_order": 1, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "electricity_wiring", "label_en": "Wiring", "label_zh": "電線", "page_number": 2, "section_id": "electricity", "official_section_order": 5, "official_item_order": 2, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "electricity_fixed_installations", "label_en": "Fixed Installations", "label_zh": "固定裝置", "page_number": 2, "section_id": "electricity", "official_section_order": 5, "official_item_order": 3, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "electricity_portable_lighting", "label_en": "Portable Lighting", "label_zh": "手提式照明設備", "page_number": 2, "section_id": "electricity", "official_section_order": 5, "official_item_order": 4, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "electricity_portable_tools", "label_en": "Portable Tools", "label_zh": "手提工具", "page_number": 2, "section_id": "electricity", "official_section_order": 5, "official_item_order": 5, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "electricity_welding_machines", "label_en": "Welding Machines", "label_zh": "焊機", "page_number": 2, "section_id": "electricity", "official_section_order": 5, "official_item_order": 6, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } },
+        { "item_id": "electricity_others", "label_en": "Others", "label_zh": "其他", "page_number": 2, "section_id": "electricity", "official_section_order": 5, "official_item_order": 7, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 2, "footer_reference": "SOSS-F3A-2 (Rev. 2002)" } }
+      ]
+    },
+    {
+      "section_id": "fire_prevention",
+      "label_en": "Fire Prevention",
+      "label_zh": "防火措施",
+      "page_number": 3,
+      "official_section_order": 6,
+      "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" },
+      "items": [
+        { "item_id": "fire_prevention_fire_fighting_appliances", "label_en": "Fire Fighting Appliances", "label_zh": "消防器具", "page_number": 3, "section_id": "fire_prevention", "official_section_order": 6, "official_item_order": 1, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "fire_prevention_means_of_escape", "label_en": "Means of Escape", "label_zh": "走火通道", "page_number": 3, "section_id": "fire_prevention", "official_section_order": 6, "official_item_order": 2, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "fire_prevention_dangerous_goods_stores", "label_en": "Dangerous Goods Stores", "label_zh": "危險品倉庫", "page_number": 3, "section_id": "fire_prevention", "official_section_order": 6, "official_item_order": 3, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "fire_prevention_gas_welding_cylinders", "label_en": "Gas Welding Cylinders", "label_zh": "氣焊氣樽", "page_number": 3, "section_id": "fire_prevention", "official_section_order": 6, "official_item_order": 4, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "fire_prevention_others", "label_en": "Others", "label_zh": "其他", "page_number": 3, "section_id": "fire_prevention", "official_section_order": 6, "official_item_order": 5, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } }
+      ]
+    },
+    {
+      "section_id": "health",
+      "label_en": "Health",
+      "label_zh": "健康",
+      "page_number": 3,
+      "official_section_order": 7,
+      "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" },
+      "items": [
+        { "item_id": "health_asbestos_control", "label_en": "Asbestos Control", "label_zh": "石棉控制", "page_number": 3, "section_id": "health", "official_section_order": 7, "official_item_order": 1, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "health_dust_control", "label_en": "Dust Control", "label_zh": "塵埃控制", "page_number": 3, "section_id": "health", "official_section_order": 7, "official_item_order": 2, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "health_noise_control", "label_en": "Noise Control", "label_zh": "噪音控制", "page_number": 3, "section_id": "health", "official_section_order": 7, "official_item_order": 3, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "health_protection_from_dangerous_substances", "label_en": "Protection from Dangerous Substances", "label_zh": "危險物質的防護", "page_number": 3, "section_id": "health", "official_section_order": 7, "official_item_order": 4, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "health_first_aid_equipment", "label_en": "First Aid Equipment", "label_zh": "急救設備", "page_number": 3, "section_id": "health", "official_section_order": 7, "official_item_order": 5, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "health_washing_facilities", "label_en": "Washing Facilities", "label_zh": "清洗設備", "page_number": 3, "section_id": "health", "official_section_order": 7, "official_item_order": 6, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "health_latrine", "label_en": "Latrine", "label_zh": "廁所", "page_number": 3, "section_id": "health", "official_section_order": 7, "official_item_order": 7, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "health_others", "label_en": "Others", "label_zh": "其他", "page_number": 3, "section_id": "health", "official_section_order": 7, "official_item_order": 8, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } }
+      ]
+    },
+    {
+      "section_id": "machinery",
+      "label_en": "Machinery",
+      "label_zh": "機器",
+      "page_number": 3,
+      "official_section_order": 8,
+      "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" },
+      "items": [
+        { "item_id": "machinery_woodworking_machines", "label_en": "Woodworking Machines", "label_zh": "木工機械", "page_number": 3, "section_id": "machinery", "official_section_order": 8, "official_item_order": 1, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "machinery_loadshifting_machines", "label_en": "Loadshifting Machines", "label_zh": "負荷物移動機械", "page_number": 3, "section_id": "machinery", "official_section_order": 8, "official_item_order": 2, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "machinery_abrasive_wheels", "label_en": "Abrasive Wheels", "label_zh": "磨輪", "page_number": 3, "section_id": "machinery", "official_section_order": 8, "official_item_order": 3, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "machinery_power_presses", "label_en": "Power Presses", "label_zh": "啤機", "page_number": 3, "section_id": "machinery", "official_section_order": 8, "official_item_order": 4, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "machinery_others", "label_en": "Others", "label_zh": "其他", "page_number": 3, "section_id": "machinery", "official_section_order": 8, "official_item_order": 5, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } }
+      ]
+    },
+    {
+      "section_id": "general",
+      "label_en": "General",
+      "label_zh": "一般事項",
+      "page_number": 3,
+      "official_section_order": 9,
+      "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" },
+      "items": [
+        { "item_id": "general_housekeeping", "label_en": "Housekeeping", "label_zh": "地盤管理", "page_number": 3, "section_id": "general", "official_section_order": 9, "official_item_order": 1, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "general_safety_nets_and_fans", "label_en": "Safety Nets and Fans", "label_zh": "安全網和斜棚", "page_number": 3, "section_id": "general", "official_section_order": 9, "official_item_order": 2, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "general_stacking_of_materials", "label_en": "Stacking of Materials", "label_zh": "物料堆疊", "page_number": 3, "section_id": "general", "official_section_order": 9, "official_item_order": 3, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "general_passageways", "label_en": "Passageways", "label_zh": "通路", "page_number": 3, "section_id": "general", "official_section_order": 9, "official_item_order": 4, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "general_lighting", "label_en": "Lighting", "label_zh": "照明設備", "page_number": 3, "section_id": "general", "official_section_order": 9, "official_item_order": 5, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "general_ventilation", "label_en": "Ventilation", "label_zh": "通風設備", "page_number": 3, "section_id": "general", "official_section_order": 9, "official_item_order": 6, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "general_notice_of_employment", "label_en": "Notice of Employment of Safety Officer/Safety Supervisor (YES/NO)", "label_zh": "有關僱用安全主任／安全督導員的告示（有／沒有）", "page_number": 3, "section_id": "general", "official_section_order": 9, "official_item_order": 7, "rating_type": "YES_NO", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } },
+        { "item_id": "general_others", "label_en": "Others", "label_zh": "其他", "page_number": 3, "section_id": "general", "official_section_order": 9, "official_item_order": 8, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 3, "footer_reference": "SOSS-F3A-3 (Rev. 2002)" } }
+      ]
+    },
+    {
+      "section_id": "personal_protective_equipment",
+      "label_en": "Personal Protective Equipment",
+      "label_zh": "個人防護設備",
+      "page_number": 4,
+      "official_section_order": 10,
+      "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" },
+      "items": [
+        { "item_id": "ppe_helmets", "label_en": "Helmets", "label_zh": "安全頭盔", "page_number": 4, "section_id": "personal_protective_equipment", "official_section_order": 10, "official_item_order": 1, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+        { "item_id": "ppe_eye_protectors", "label_en": "Eye Protectors", "label_zh": "護眼用具", "page_number": 4, "section_id": "personal_protective_equipment", "official_section_order": 10, "official_item_order": 2, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+        { "item_id": "ppe_ear_protectors", "label_en": "Ear Protectors", "label_zh": "聽覺保護器", "page_number": 4, "section_id": "personal_protective_equipment", "official_section_order": 10, "official_item_order": 3, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+        { "item_id": "ppe_respirators", "label_en": "Respirators", "label_zh": "呼吸器", "page_number": 4, "section_id": "personal_protective_equipment", "official_section_order": 10, "official_item_order": 4, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+        { "item_id": "ppe_safety_belts", "label_en": "Safety Belts", "label_zh": "安全帶", "page_number": 4, "section_id": "personal_protective_equipment", "official_section_order": 10, "official_item_order": 5, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+        { "item_id": "ppe_gloves", "label_en": "Gloves", "label_zh": "手套", "page_number": 4, "section_id": "personal_protective_equipment", "official_section_order": 10, "official_item_order": 6, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+        { "item_id": "ppe_safety_shoes", "label_en": "Safety Shoes", "label_zh": "安全鞋", "page_number": 4, "section_id": "personal_protective_equipment", "official_section_order": 10, "official_item_order": 7, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+        { "item_id": "ppe_reflective_jackets", "label_en": "Reflective Jackets", "label_zh": "反光外套", "page_number": 4, "section_id": "personal_protective_equipment", "official_section_order": 10, "official_item_order": 8, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+        { "item_id": "ppe_others", "label_en": "Others", "label_zh": "其他", "page_number": 4, "section_id": "personal_protective_equipment", "official_section_order": 10, "official_item_order": 9, "rating_type": "GSP", "supports_weekday_rating": true, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } }
+      ]
+    }
+  ],
+  "document_fields": [
+    { "field_id": "safety_supervisor_name", "label_en": "Name of Safety Supervisor", "label_zh": "安全督導員姓名", "page_number": 1, "official_field_order": 1, "field_type": "metadata", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+    { "field_id": "safety_officer_name", "label_en": "Name of Safety Officer", "label_zh": "安全主任姓名", "page_number": 1, "official_field_order": 2, "field_type": "metadata", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+    { "field_id": "proprietor_name", "label_en": "Name of Proprietor", "label_zh": "東主姓名", "page_number": 1, "official_field_order": 3, "field_type": "metadata", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+    { "field_id": "company_name", "label_en": "Name of Company", "label_zh": "公司名稱", "page_number": 1, "official_field_order": 4, "field_type": "metadata", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+    { "field_id": "construction_site_address", "label_en": "Address of Construction Site", "label_zh": "建築地盤地址", "page_number": 1, "official_field_order": 5, "field_type": "metadata", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+    { "field_id": "number_of_workers", "label_en": "Number of Workers", "label_zh": "工人數目", "page_number": 1, "official_field_order": 6, "field_type": "metadata", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+    { "field_id": "week_start_date", "label_en": "For the week between", "label_zh": "有關期間：由", "page_number": 1, "official_field_order": 7, "field_type": "date", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+    { "field_id": "week_end_date", "label_en": "and", "label_zh": "至", "page_number": 1, "official_field_order": 8, "field_type": "date", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 1, "footer_reference": "SOSS-F3A-1 (Rev. 2002)" } },
+    { "field_id": "recommendations", "label_en": "Recommendations", "label_zh": "建議", "page_number": 4, "official_field_order": 1, "field_type": "narrative", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+    { "field_id": "safety_supervisor_signature", "label_en": "Signature — Safety Supervisor", "label_zh": "簽署 — 安全督導員", "page_number": 4, "official_field_order": 2, "field_type": "signature", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+    { "field_id": "safety_supervisor_date", "label_en": "Date", "label_zh": "日期", "page_number": 4, "official_field_order": 3, "field_type": "date", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+    { "field_id": "report_discussion_acknowledgement", "label_en": "I discussed this report with the safety supervisor on", "label_zh": "本人已於以下日期與以上安全督導員討論本報告書", "page_number": 4, "official_field_order": 4, "field_type": "acknowledgement", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+    { "field_id": "report_discussion_date", "label_en": "Discussion date", "label_zh": "討論日期", "page_number": 4, "official_field_order": 5, "field_type": "date", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } },
+    { "field_id": "proprietor_or_safety_officer_signature", "label_en": "Signature — Proprietor / Safety Officer", "label_zh": "簽署 — 東主／安全主任", "page_number": 4, "official_field_order": 6, "field_type": "signature", "rating_type": "NONE", "supports_weekday_rating": false, "source_form_reference": { "form_id": "SOSS-F3A", "page_number": 4, "footer_reference": "SOSS-F3A-4 (Rev. 2002)" } }
+  ]
+}
