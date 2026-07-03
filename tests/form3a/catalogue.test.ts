@@ -23,6 +23,14 @@ const EXPECTED_PAGE_COUNTS = { 1: 9, 2: 21, 3: 26, 4: 9 } as const;
 
 type Catalogue = ReturnType<typeof loadFieldCatalogue>;
 
+function projectSourceReference(reference: {
+  form_id: string;
+  page_number: number;
+  footer_reference: string;
+}) {
+  return [reference.form_id, reference.page_number, reference.footer_reference];
+}
+
 function projectForOfficialComparison(catalogue: Catalogue) {
   return {
     source: {
@@ -34,6 +42,22 @@ function projectForOfficialComparison(catalogue: Catalogue) {
       const section = catalogue.sections.find((entry) => entry.page_number === page);
       return [page, section?.source_form_reference.footer_reference];
     }),
+    source_form_references: {
+      sections: catalogue.sections.map((section) => [
+        section.section_id,
+        projectSourceReference(section.source_form_reference),
+      ]),
+      items: catalogue.sections.flatMap((section) =>
+        section.items.map((item) => [
+          item.item_id,
+          projectSourceReference(item.source_form_reference),
+        ]),
+      ),
+      document_fields: catalogue.document_fields.map((field) => [
+        field.field_id,
+        projectSourceReference(field.source_form_reference),
+      ]),
+    },
     sections: catalogue.sections.map((section) => ({
       section: [
         section.section_id,
@@ -63,7 +87,6 @@ function projectForOfficialComparison(catalogue: Catalogue) {
       field.page_number,
       field.official_field_order,
       field.field_type,
-      field.source_form_reference.footer_reference,
     ]),
   };
 }
@@ -220,9 +243,15 @@ describe("official Form 3A field catalogue", () => {
     ["arbitrary Chinese label", (catalogue: Catalogue) => { catalogue.sections[0]!.items[0]!.label_zh = "任意"; }, false],
     ["arbitrary unique item ID", (catalogue: Catalogue) => { catalogue.sections[0]!.items[0]!.item_id = "arbitrary_unique_item"; }, false],
     ["incorrect source revision", (catalogue: Catalogue) => { catalogue.source.revision = "Rev. 2099"; }, false],
-    ["invalid page footer", (catalogue: Catalogue) => { catalogue.sections[0]!.source_form_reference.footer_reference = "INVALID"; }, false],
-    ["section source page mismatch", (catalogue: Catalogue) => { catalogue.sections[0]!.source_form_reference.page_number = 2; }, true],
-    ["document field source page mismatch", (catalogue: Catalogue) => { catalogue.document_fields[0]!.source_form_reference.page_number = 2; }, true],
+    ["second section on page has invalid footer", (catalogue: Catalogue) => { catalogue.sections[1]!.source_form_reference.footer_reference = "INVALID"; }, false],
+    ["non-first inspection item has invalid footer", (catalogue: Catalogue) => { catalogue.sections[0]!.items[1]!.source_form_reference.footer_reference = "INVALID"; }, false],
+    ["Page 2 inspection item has invalid footer", (catalogue: Catalogue) => { catalogue.sections[2]!.items[2]!.source_form_reference.footer_reference = "INVALID"; }, false],
+    ["Page 3 inspection item has invalid footer", (catalogue: Catalogue) => { catalogue.sections[5]!.items[2]!.source_form_reference.footer_reference = "INVALID"; }, false],
+    ["Page 4 inspection item has invalid footer", (catalogue: Catalogue) => { catalogue.sections[9]!.items[2]!.source_form_reference.footer_reference = "INVALID"; }, false],
+    ["inspection item source reference is missing", (catalogue: Catalogue) => { Reflect.deleteProperty(catalogue.sections[4]!.items[2]!, "source_form_reference"); }, true],
+    ["section source page mismatch", (catalogue: Catalogue) => { catalogue.sections[4]!.source_form_reference.page_number = 3; }, true],
+    ["inspection item source page mismatch", (catalogue: Catalogue) => { catalogue.sections[6]!.items[2]!.source_form_reference.page_number = 2; }, true],
+    ["document field source page mismatch", (catalogue: Catalogue) => { catalogue.document_fields[9]!.source_form_reference.page_number = 1; }, true],
     ["duplicate item ID", (catalogue: Catalogue) => { catalogue.sections[0]!.items[1]!.item_id = catalogue.sections[0]!.items[0]!.item_id; }, true],
     ["wrong YES_NO identity", (catalogue: Catalogue) => {
       catalogue.sections[8]!.items[6]!.rating_type = "GSP";

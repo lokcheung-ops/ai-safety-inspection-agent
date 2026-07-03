@@ -4,6 +4,11 @@ Kaggle AI Agents Capstone — Agents for Business.
 
 This repository is currently limited to Work Package 1: the deterministic data foundation for five synthetic Hong Kong Labour Department Form 3A reports.
 
+## Runtime requirements
+
+- Node.js 24.14.1
+- Corepack with pnpm 11.7.0
+
 ## Gate 2 commands
 
 ```bash
