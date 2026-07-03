@@ -80,6 +80,10 @@ export function validateFieldCatalogue(input: unknown): FieldCatalogue {
   }
 
   for (const section of catalogue.sections) {
+    if (section.source_form_reference.page_number !== section.page_number) {
+      throw new Error(`Incorrect source page mapping for section ${section.section_id}`);
+    }
+
     const expectedCount = EXPECTED_SECTION_COUNTS[section.section_id];
     if (expectedCount === undefined || section.items.length !== expectedCount) {
       throw new Error(`Incorrect item count for section ${section.section_id}`);
@@ -118,6 +122,22 @@ export function validateFieldCatalogue(input: unknown): FieldCatalogue {
   if (yesNoItems.length !== 1) throw new Error("Catalogue must contain exactly one YES_NO item");
   if (yesNoItems[0]?.item_id !== "general_notice_of_employment") {
     throw new Error("YES_NO rating type must belong to the notice-of-employment item");
+  }
+
+  for (const field of catalogue.document_fields) {
+    if (field.source_form_reference.page_number !== field.page_number) {
+      throw new Error(`Incorrect source page mapping for document field ${field.field_id}`);
+    }
+  }
+
+  const recommendationFields = catalogue.document_fields.filter(
+    (field) => field.field_id === "recommendation",
+  );
+  if (
+    recommendationFields.length !== 1 ||
+    catalogue.document_fields.some((field) => field.field_id === "recommendations")
+  ) {
+    throw new Error("Document fields must use the singular recommendation ID");
   }
 
   return catalogue;

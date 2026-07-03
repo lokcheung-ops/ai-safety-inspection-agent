@@ -4,6 +4,7 @@ import {
   loadFieldCatalogue,
   validateFieldCatalogue,
 } from "../../src/form3a/catalogue.js";
+import { OFFICIAL_FORM3A_ORACLE } from "../fixtures/form3a-official-catalogue.expected.js";
 
 const EXPECTED_SECTION_COUNTS = {
   access_and_egress: 4,
@@ -19,6 +20,53 @@ const EXPECTED_SECTION_COUNTS = {
 } as const;
 
 const EXPECTED_PAGE_COUNTS = { 1: 9, 2: 21, 3: 26, 4: 9 } as const;
+
+type Catalogue = ReturnType<typeof loadFieldCatalogue>;
+
+function projectForOfficialComparison(catalogue: Catalogue) {
+  return {
+    source: {
+      form_id: catalogue.source.form_id,
+      page_count: catalogue.source.page_count,
+      revision: catalogue.source.revision,
+    },
+    page_footers: [1, 2, 3, 4].map((page) => {
+      const section = catalogue.sections.find((entry) => entry.page_number === page);
+      return [page, section?.source_form_reference.footer_reference];
+    }),
+    sections: catalogue.sections.map((section) => ({
+      section: [
+        section.section_id,
+        section.label_en,
+        section.label_zh,
+        section.page_number,
+        section.official_section_order,
+      ],
+      items: section.items.map((item) => [
+        item.item_id,
+        item.label_en,
+        item.label_zh,
+        item.page_number,
+        item.section_id,
+        item.official_section_order,
+        item.official_item_order,
+        item.rating_type,
+      ]),
+    })),
+    yes_no_item_id: catalogue.sections
+      .flatMap((section) => section.items)
+      .find((item) => item.rating_type === "YES_NO")?.item_id,
+    document_fields: catalogue.document_fields.map((field) => [
+      field.field_id,
+      field.label_en,
+      field.label_zh,
+      field.page_number,
+      field.official_field_order,
+      field.field_type,
+      field.source_form_reference.footer_reference,
+    ]),
+  };
+}
 
 describe("official Form 3A field catalogue", () => {
   it("contains the complete 65-item, four-page official structure", () => {
@@ -89,20 +137,29 @@ describe("official Form 3A field catalogue", () => {
     expect(items.filter((item) => item.rating_type === "GSP")).toHaveLength(64);
   });
 
-  it("represents recommendations and signatures only as document fields", () => {
+  it("uses singular recommendation as the contract ID while retaining official labels", () => {
     const catalogue = loadFieldCatalogue();
     const itemIds = catalogue.sections.flatMap((section) =>
       section.items.map((item) => item.item_id),
     );
     const documentFieldIds = catalogue.document_fields.map((field) => field.field_id);
 
-    expect(documentFieldIds).toContain("recommendations");
+    expect(documentFieldIds).toContain("recommendation");
+    expect(documentFieldIds).not.toContain("recommendations");
+    expect(catalogue.document_fields.find((field) => field.field_id === "recommendation")).toEqual(
+      expect.objectContaining({ label_en: "Recommendations", label_zh: "建議" }),
+    );
     expect(documentFieldIds).toContain("safety_supervisor_signature");
     expect(documentFieldIds).toContain("proprietor_or_safety_officer_signature");
     expect(catalogue.document_fields.every((field) => field.rating_type === "NONE")).toBe(true);
     expect(catalogue.document_fields.every((field) => !field.supports_weekday_rating)).toBe(true);
+    expect(itemIds).not.toContain("recommendation");
     expect(itemIds).not.toContain("recommendations");
     expect(itemIds.some((id) => id.includes("signature"))).toBe(false);
+  });
+
+  it("matches the independent official catalogue oracle exactly", () => {
+    expect(projectForOfficialComparison(loadFieldCatalogue())).toEqual(OFFICIAL_FORM3A_ORACLE);
   });
 
   it("rejects duplicate IDs, incorrect page mappings, and invalid rating types", () => {
@@ -141,5 +198,44 @@ describe("official Form 3A field catalogue", () => {
     visit(catalogue);
     expect(prohibitedKeys).toEqual([]);
     expect(JSON.stringify(catalogue)).not.toContain("rating_remarks_inconsistency");
+  });
+
+  it("rejects the plural recommendations document field ID", () => {
+    const catalogue = loadFieldCatalogue();
+    const recommendation = catalogue.document_fields.find(
+      (field) => field.field_id === "recommendation",
+    );
+    expect(recommendation).toBeDefined();
+    recommendation!.field_id = "recommendations";
+
+    expect(() => validateFieldCatalogue(catalogue)).toThrow(/singular recommendation/i);
+  });
+
+  it.each([
+    ["wrong section order", (catalogue: Catalogue) => { catalogue.sections[0]!.official_section_order = 2; }, true],
+    ["wrong item order", (catalogue: Catalogue) => { catalogue.sections[0]!.items[0]!.official_item_order = 2; }, true],
+    ["item moved to wrong page", (catalogue: Catalogue) => { catalogue.sections[0]!.items[0]!.page_number = 2; }, true],
+    ["item assigned to wrong section", (catalogue: Catalogue) => { catalogue.sections[0]!.items[0]!.section_id = "working_at_height"; }, true],
+    ["arbitrary English label", (catalogue: Catalogue) => { catalogue.sections[0]!.items[0]!.label_en = "Arbitrary"; }, false],
+    ["arbitrary Chinese label", (catalogue: Catalogue) => { catalogue.sections[0]!.items[0]!.label_zh = "任意"; }, false],
+    ["arbitrary unique item ID", (catalogue: Catalogue) => { catalogue.sections[0]!.items[0]!.item_id = "arbitrary_unique_item"; }, false],
+    ["incorrect source revision", (catalogue: Catalogue) => { catalogue.source.revision = "Rev. 2099"; }, false],
+    ["invalid page footer", (catalogue: Catalogue) => { catalogue.sections[0]!.source_form_reference.footer_reference = "INVALID"; }, false],
+    ["section source page mismatch", (catalogue: Catalogue) => { catalogue.sections[0]!.source_form_reference.page_number = 2; }, true],
+    ["document field source page mismatch", (catalogue: Catalogue) => { catalogue.document_fields[0]!.source_form_reference.page_number = 2; }, true],
+    ["duplicate item ID", (catalogue: Catalogue) => { catalogue.sections[0]!.items[1]!.item_id = catalogue.sections[0]!.items[0]!.item_id; }, true],
+    ["wrong YES_NO identity", (catalogue: Catalogue) => {
+      catalogue.sections[8]!.items[6]!.rating_type = "GSP";
+      catalogue.sections[0]!.items[0]!.rating_type = "YES_NO";
+    }, true],
+  ] as const)("detects mutation: %s", (_name, mutate, mustFailValidation) => {
+    const catalogue = structuredClone(loadFieldCatalogue());
+    mutate(catalogue);
+
+    if (mustFailValidation) {
+      expect(() => validateFieldCatalogue(catalogue)).toThrow();
+    } else {
+      expect(projectForOfficialComparison(catalogue)).not.toEqual(OFFICIAL_FORM3A_ORACLE);
+    }
   });
 });
