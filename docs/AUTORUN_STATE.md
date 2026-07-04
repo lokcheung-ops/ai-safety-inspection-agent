@@ -1,18 +1,17 @@
 # Controlled Workflow State
 
 ```yaml
-current_gate: Gate 2
-current_role: Reviewer
-current_state: READY_FOR_FINAL_REVIEW
-last_completed_gate: Gate 2 implementation and repair
+current_gate: Gate 3
+current_role: Main
+current_state: READY_FOR_IMPLEMENTATION
+last_completed_gate: Gate 2
 last_verified_commit: a8a2133b29e41b6904190153730e9062db11e3b4
-active_prompt: prompts/gate-2-final-review.md
-required_next_role: Independent Reviewer
+active_prompt: prompts/gate-3-implementation.md
+required_next_role: Main
 allowed_next_states:
-  - READY_FOR_GATE_3
-  - REPAIR_REQUIRED
+  - READY_FOR_GATE_3_REVIEW
   - BLOCKED
-blocker: Gate 3 is blocked pending an independent Gate 2 verdict.
+blocker: null
 last_commands:
   - node --version
   - corepack pnpm --version
@@ -32,6 +31,6 @@ last_test_results:
   build: PASS
   full_tests: PASS (27/27)
   diff_check: PASS
-reviewer_verdict: PENDING
-updated_at: 2026-07-04T08:26:12+08:00
+reviewer_verdict: PASS
+updated_at: 2026-07-04T11:19:45+08:00
 ```
