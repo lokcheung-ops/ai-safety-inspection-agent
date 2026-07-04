@@ -10,6 +10,8 @@
   "scripts": {
     "test:catalogue": "vitest run tests/form3a/catalogue.test.ts",
     "test:fixture": "vitest run tests/form3a/fixture.test.ts",
+    "test:gate4a": "vitest run tests/form3a/normalized.test.ts",
+    "generate:gate4a": "node --import tsx src/form3a/generate-gate4a.ts",
     "test": "vitest run",
     "lint": "eslint src tests",
     "typecheck": "tsc --noEmit",

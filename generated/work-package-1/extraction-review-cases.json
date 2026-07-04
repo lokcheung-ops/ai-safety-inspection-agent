@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_version": "1.0.0",
+  "source_fixture": "data/form3a/canonical-five-week-fixture.json",
+  "extraction_review_notice": "OCR is not implemented. These annotations represent reviewed post-extraction synthetic demonstration data.",
+  "cases": [
+    {
+      "case_id": "EXTRACTION-REVIEW-01",
+      "case_type": "unclear_handwritten_recommendation",
+      "extraction_status": "Needs review",
+      "issue_description": "The handwritten-style Page 4 entry requires confirmation against the reviewed transcription.",
+      "source_reference": {
+        "report_id": "F3A-R01",
+        "page_number": 4,
+        "recommendation_entry_id": "F3A-R01-REC-02",
+        "display_reference": "F3A-R01 / p.4 / Recommendation 2"
+      }
+    },
+    {
+      "case_id": "EXTRACTION-REVIEW-02",
+      "case_type": "missing_or_unclear_acknowledgement_signature",
+      "extraction_status": "Needs review",
+      "issue_description": "The acknowledgement signature is intentionally absent and requires human confirmation.",
+      "source_reference": {
+        "report_id": "F3A-R03",
+        "page_number": 4,
+        "field_id": "proprietor_or_safety_officer_signature",
+        "display_reference": "F3A-R03 / p.4 / Proprietor or Safety Officer signature"
+      }
+    },
+    {
+      "case_id": "EXTRACTION-REVIEW-03",
+      "case_type": "ambiguous_recommendation_item_reference",
+      "extraction_status": "Needs review",
+      "issue_description": "The handwritten-style item reference is ambiguous; the reviewed demonstration interpretation links it to General / Passageways.",
+      "source_reference": {
+        "report_id": "F3A-R05",
+        "page_number": 4,
+        "item_id": "general_passageways",
+        "recommendation_entry_id": "F3A-R05-REC-02",
+        "display_reference": "F3A-R05 / p.4 / Recommendation 2 / General / Passageways"
+      }
+    }
+  ]
+}
