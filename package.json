@@ -22,6 +22,8 @@
     "generate:gate4d": "node --import tsx src/form3a/generate-gate4d.ts",
     "test:gate5": "vitest run tests/form3a/findings.test.ts",
     "generate:gate5": "node --import tsx src/form3a/generate-gate5.ts",
+    "test:gate6": "vitest run tests/form3a/manifest.test.ts",
+    "generate:gate6": "node --import tsx src/form3a/generate-gate6.ts",
     "test": "vitest run",
     "lint": "eslint src tests",
     "typecheck": "tsc --noEmit",

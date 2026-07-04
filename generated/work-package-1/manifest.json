@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "work_package": "Work Package 1",
+  "fixture_version": "1.0.0",
+  "source_catalogue_version": "1.0.0",
+  "canonical_source_path": "data/form3a/canonical-five-week-fixture.json",
+  "catalogue_source_path": "data/form3a/field-catalogue.json",
+  "manifest_path": "generated/work-package-1/manifest.json",
+  "generation": {
+    "deterministic": true,
+    "orchestrator_command": "corepack pnpm generate:gate6",
+    "stage_commands": [
+      "corepack pnpm generate:gate4a",
+      "corepack pnpm generate:gate4b",
+      "corepack pnpm generate:gate4c",
+      "corepack pnpm generate:gate4d",
+      "corepack pnpm generate:gate5"
+    ],
+    "checksum_algorithm": "SHA-256",
+    "reproducibility_mode": "byte-identical committed artifacts"
+  },
+  "counts": {
+    "report_count": 5,
+    "pdf_file_count": 6,
+    "individual_pdf_count": 5,
+    "individual_pdf_page_count": 20,
+    "combined_pdf_page_count": 20,
+    "observation_count": 2275,
+    "weekly_summary_count": 325,
+    "recommendation_count": 8,
+    "extraction_review_case_count": 3,
+    "finding_count": 5,
+    "finding_evidence_reference_count": 8,
+    "ui_report_count": 5,
+    "ui_page_reference_count": 20
+  },
+  "artifacts": [
+    {
+      "path": "generated/work-package-1/normalized-data.json",
+      "purpose": "Normalized daily observations, weekly summaries, and recommendations",
+      "media_type": "application/json",
+      "sha256": "6e68a660060b441f837edc154af54fb5d8d477a7f6d874f14e2d3684fc49d7b6"
+    },
+    {
+      "path": "generated/work-package-1/extraction-review-cases.json",
+      "purpose": "Extraction data-quality cases kept separate from safety findings",
+      "media_type": "application/json",
+      "sha256": "33ed7a8327fb15167f9ce770a25170e8af9435f2d2040ea2d264df642d255279"
+    },
+    {
+      "path": "generated/work-package-1/normalized-data.xlsx",
+      "purpose": "Seven-sheet review workbook with frozen headers and source traceability",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "sha256": "da21faf210925f0f0828df996170fcc959a636ffcbd9f6011c15eebeee5d0c57"
+    },
+    {
+      "path": "generated/work-package-1/pdfs/F3A-R01.pdf",
+      "purpose": "F3A-R01 four-page bilingual Form 3A report",
+      "media_type": "application/pdf",
+      "sha256": "e183a07d1740b7a2c4b43ef3d1c447a73f58a37442f8df6b061c16e6c48e75f8"
+    },
+    {
+      "path": "generated/work-package-1/pdfs/F3A-R02.pdf",
+      "purpose": "F3A-R02 four-page bilingual Form 3A report",
+      "media_type": "application/pdf",
+      "sha256": "e2b261aa52b5a379fd969223962f7bbffdb0fb5a2d474845e3ec4e28e167a09d"
+    },
+    {
+      "path": "generated/work-package-1/pdfs/F3A-R03.pdf",
+      "purpose": "F3A-R03 four-page bilingual Form 3A report",
+      "media_type": "application/pdf",
+      "sha256": "c7d910cc0497a05477a38a88e0fff16a8b73bf2fae7d4a1c8a613212fb5c9845"
+    },
+    {
+      "path": "generated/work-package-1/pdfs/F3A-R04.pdf",
+      "purpose": "F3A-R04 four-page bilingual Form 3A report",
+      "media_type": "application/pdf",
+      "sha256": "e2689f04f7dba7671ead35424f6f8d96dbc0d2b6b1dfd5f0d8b31e3a81113e8b"
+    },
+    {
+      "path": "generated/work-package-1/pdfs/F3A-R05.pdf",
+      "purpose": "F3A-R05 four-page bilingual Form 3A report",
+      "media_type": "application/pdf",
+      "sha256": "98ffe92e55354835633d6e5976f8fd06d7919df8dc4e57462154a056d1522a8e"
+    },
+    {
+      "path": "generated/work-package-1/pdfs/form3a-five-week-combined.pdf",
+      "purpose": "Combined twenty-page PDF containing all five reports in order",
+      "media_type": "application/pdf",
+      "sha256": "4c1fb1efa585391b9a32ddd4ef2a40272c0550b9cd507270d6056608f2c54233"
+    },
+    {
+      "path": "generated/work-package-1/ui-projection.json",
+      "purpose": "UI-friendly report switching and single-page PDF reference data",
+      "media_type": "application/json",
+      "sha256": "fb54ff516670398dc0cffbdf9ca4d556f4871b5657ea5f1ac10be3de15fcf83d"
+    },
+    {
+      "path": "generated/work-package-1/safety-review-brief.json",
+      "purpose": "Five deterministic, evidence-linked safety review findings",
+      "media_type": "application/json",
+      "sha256": "40dfb1cbd601af663bc074beb8f51b69fd863f6959af680edc06ea04e35fa7f0"
+    }
+  ]
+}

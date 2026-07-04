@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 import ExcelJS from "exceljs";
+import { unzipSync, zipSync } from "fflate";
 
 import { loadFieldCatalogue } from "../src/form3a/catalogue.ts";
 import { loadCanonicalFixture } from "../src/form3a/fixture.ts";
@@ -98,6 +99,11 @@ for (const [sheetIndex, definition] of workbookData.entries()) {
 
 await fs.mkdir(path.dirname(NORMALIZED_XLSX_PATH), { recursive: true });
 await workbook.xlsx.writeFile(NORMALIZED_XLSX_PATH);
+const workbookArchive = unzipSync(new Uint8Array(await fs.readFile(NORMALIZED_XLSX_PATH)));
+await fs.writeFile(
+  NORMALIZED_XLSX_PATH,
+  zipSync(workbookArchive, { level: 6, mtime: workbookTimestamp }),
+);
 await fs.rm(`${NORMALIZED_XLSX_PATH}.inspect.ndjson`, { force: true });
 
 function columnWidth(header, rows, columnIndex) {
