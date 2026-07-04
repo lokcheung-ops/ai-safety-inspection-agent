@@ -9,6 +9,7 @@
   },
   "scripts": {
     "test:catalogue": "vitest run tests/form3a/catalogue.test.ts",
+    "test:fixture": "vitest run tests/form3a/fixture.test.ts",
     "test": "vitest run",
     "lint": "eslint src tests",
     "typecheck": "tsc --noEmit",

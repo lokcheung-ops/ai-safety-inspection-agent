@@ -1,0 +1,4704 @@
+{
+  "fixture_version": "1.0.0",
+  "source_catalogue_version": "1.0.0",
+  "synthetic_data_notice": "SYNTHETIC DEMONSTRATION — NOT A REAL SITE RECORD",
+  "extraction_review_notice": "OCR is not implemented. These annotations represent reviewed post-extraction synthetic demonstration data.",
+  "project_metadata": {
+    "project_name": "Cedar Quay Learning Centre Demonstration Works (Fictional)",
+    "construction_site_address": "Plot DEMO-17, Fictional Harbour District, Hong Kong (Synthetic address)"
+  },
+  "company_metadata": {
+    "company_name": "Harbour Lantern Construction Demonstration Ltd. (Fictional)",
+    "principal_contractor_name": "Harbour Lantern Principal Contractor (Fictional)"
+  },
+  "personnel_metadata": {
+    "safety_supervisor_name": "Leung Hoi-Yan (Fictional)",
+    "safety_officer_name": "Mok Tin-Lam (Fictional)",
+    "proprietor_representative_name": "Chan Yat-Sing (Fictional)"
+  },
+  "reports": [
+    {
+      "report_id": "F3A-R01",
+      "week_start_date": "2026-05-31",
+      "week_end_date": "2026-06-06",
+      "page_count": 4,
+      "number_of_workers": 42,
+      "item_ratings": [
+        {
+          "item_id": "access_and_egress_gangways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_ladders",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_passageways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_scaffolds",
+          "daily_values": [
+            "N/A",
+            "S",
+            "S",
+            "S",
+            "G",
+            "S",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_working_platforms",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_floor_edges_openings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_lift_shafts_openings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_excavations",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_trenches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_caissons",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_tunnels",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_slopes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_cranes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_winches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_pulley_blocks",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_passenger_hoists",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_material_or_skip_hoists",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_suspended_working_platforms",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_chains_ropes_hooks_slings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_switches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_wiring",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_fixed_installations",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_portable_lighting",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_portable_tools",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_welding_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_fire_fighting_appliances",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_means_of_escape",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_dangerous_goods_stores",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_gas_welding_cylinders",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_asbestos_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_dust_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_noise_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_protection_from_dangerous_substances",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_first_aid_equipment",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_washing_facilities",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            null
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_latrine",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_woodworking_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_loadshifting_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_abrasive_wheels",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_power_presses",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_housekeeping",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_safety_nets_and_fans",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_stacking_of_materials",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "S",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_passageways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_lighting",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_ventilation",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_notice_of_employment",
+          "daily_values": [
+            "N/A",
+            "YES",
+            "YES",
+            "YES",
+            "YES",
+            "YES",
+            "YES"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_helmets",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_eye_protectors",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_ear_protectors",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "S",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_respirators",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_safety_belts",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_gloves",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_safety_shoes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_reflective_jackets",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        }
+      ],
+      "recommendations": [
+        {
+          "recommendation_id": "F3A-R01-REC-01",
+          "page_number": 4,
+          "recommendation": "Minor scaffold access obstruction observed at the demonstration work area. Clear the access route and confirm it remains unobstructed.",
+          "extraction_status": "Confirmed",
+          "linked_observations": [
+            {
+              "item_id": "working_at_height_scaffolds",
+              "inspection_date": "2026-06-03"
+            }
+          ],
+          "source_reference": {
+            "report_id": "F3A-R01",
+            "page_number": 4,
+            "recommendation_entry_id": "F3A-R01-REC-01",
+            "display_reference": "F3A-R01 / p.4 / Recommendation 1"
+          }
+        },
+        {
+          "recommendation_id": "F3A-R01-REC-02",
+          "page_number": 4,
+          "recommendation": "Reviewed transcription: Materials appear unevenly stacked beside the internal passageway; reorganise the stack and verify the route is clear.",
+          "extraction_status": "Needs review",
+          "linked_observations": [
+            {
+              "item_id": "general_stacking_of_materials",
+              "inspection_date": "2026-06-05"
+            }
+          ],
+          "source_reference": {
+            "report_id": "F3A-R01",
+            "page_number": 4,
+            "recommendation_entry_id": "F3A-R01-REC-02",
+            "display_reference": "F3A-R01 / p.4 / Recommendation 2"
+          }
+        }
+      ],
+      "signatures": {
+        "safety_supervisor_signature": {
+          "value": "FICTIONAL-TYPED-MARK-SS-01",
+          "extraction_status": "Confirmed"
+        },
+        "safety_supervisor_date": {
+          "value": "2026-06-06",
+          "extraction_status": "Confirmed"
+        },
+        "report_discussion_acknowledgement": {
+          "value": "Discussed with fictional site representatives for F3A-R01",
+          "extraction_status": "Confirmed"
+        },
+        "report_discussion_date": {
+          "value": "2026-06-06",
+          "extraction_status": "Confirmed"
+        },
+        "proprietor_or_safety_officer_signature": {
+          "value": "FICTIONAL-TYPED-MARK-ACK-01",
+          "extraction_status": "Confirmed"
+        }
+      }
+    },
+    {
+      "report_id": "F3A-R02",
+      "week_start_date": "2026-06-07",
+      "week_end_date": "2026-06-13",
+      "page_count": 4,
+      "number_of_workers": 45,
+      "item_ratings": [
+        {
+          "item_id": "access_and_egress_gangways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_ladders",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_passageways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_scaffolds",
+          "daily_values": [
+            "N/A",
+            "P",
+            "P",
+            "P",
+            "S",
+            "P",
+            "S"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_working_platforms",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_floor_edges_openings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_lift_shafts_openings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_excavations",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_trenches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_caissons",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_tunnels",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_slopes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_cranes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_winches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_pulley_blocks",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_passenger_hoists",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_material_or_skip_hoists",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_suspended_working_platforms",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_chains_ropes_hooks_slings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_switches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_wiring",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_fixed_installations",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_portable_lighting",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_portable_tools",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_welding_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_fire_fighting_appliances",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_means_of_escape",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_dangerous_goods_stores",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_gas_welding_cylinders",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "S",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_asbestos_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_dust_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_noise_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_protection_from_dangerous_substances",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_first_aid_equipment",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_washing_facilities",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_latrine",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_woodworking_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_loadshifting_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_abrasive_wheels",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_power_presses",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_housekeeping",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_safety_nets_and_fans",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_stacking_of_materials",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_passageways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_lighting",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_ventilation",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_notice_of_employment",
+          "daily_values": [
+            "N/A",
+            "YES",
+            "YES",
+            "YES",
+            "YES",
+            "YES",
+            "YES"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_helmets",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_eye_protectors",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_ear_protectors",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "S",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_respirators",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_safety_belts",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_gloves",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_safety_shoes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_reflective_jackets",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        }
+      ],
+      "recommendations": [
+        {
+          "recommendation_id": "F3A-R02-REC-01",
+          "page_number": 4,
+          "recommendation": "Toe-board gaps and incomplete scaffold access control observed in the demonstration area. Install the missing protection and restrict access until the corrective work is recorded.",
+          "extraction_status": "Confirmed",
+          "linked_observations": [
+            {
+              "item_id": "working_at_height_scaffolds",
+              "inspection_date": "2026-06-09"
+            }
+          ],
+          "source_reference": {
+            "report_id": "F3A-R02",
+            "page_number": 4,
+            "recommendation_entry_id": "F3A-R02-REC-01",
+            "display_reference": "F3A-R02 / p.4 / Recommendation 1"
+          }
+        },
+        {
+          "recommendation_id": "F3A-R02-REC-02",
+          "page_number": 4,
+          "recommendation": "Damaged ladder side rail observed near the fictional Block B access. Remove the ladder from use and replace it before further work.",
+          "extraction_status": "Confirmed",
+          "linked_observations": [
+            {
+              "item_id": "access_and_egress_ladders",
+              "inspection_date": "2026-06-10"
+            }
+          ],
+          "source_reference": {
+            "report_id": "F3A-R02",
+            "page_number": 4,
+            "recommendation_entry_id": "F3A-R02-REC-02",
+            "display_reference": "F3A-R02 / p.4 / Recommendation 2"
+          },
+          "intentional_case": "rating_recommendation_inconsistency"
+        }
+      ],
+      "signatures": {
+        "safety_supervisor_signature": {
+          "value": "FICTIONAL-TYPED-MARK-SS-02",
+          "extraction_status": "Confirmed"
+        },
+        "safety_supervisor_date": {
+          "value": "2026-06-13",
+          "extraction_status": "Confirmed"
+        },
+        "report_discussion_acknowledgement": {
+          "value": "Discussed with fictional site representatives for F3A-R02",
+          "extraction_status": "Confirmed"
+        },
+        "report_discussion_date": {
+          "value": "2026-06-13",
+          "extraction_status": "Confirmed"
+        },
+        "proprietor_or_safety_officer_signature": {
+          "value": "FICTIONAL-TYPED-MARK-ACK-02",
+          "extraction_status": "Confirmed"
+        }
+      }
+    },
+    {
+      "report_id": "F3A-R03",
+      "week_start_date": "2026-06-14",
+      "week_end_date": "2026-06-20",
+      "page_count": 4,
+      "number_of_workers": 47,
+      "item_ratings": [
+        {
+          "item_id": "access_and_egress_gangways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_ladders",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_passageways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_scaffolds",
+          "daily_values": [
+            "N/A",
+            "P",
+            "P",
+            "P",
+            "P",
+            "S",
+            "P"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_working_platforms",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_floor_edges_openings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_lift_shafts_openings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_excavations",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_trenches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_caissons",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_tunnels",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_slopes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_cranes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_winches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_pulley_blocks",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_passenger_hoists",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_material_or_skip_hoists",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_suspended_working_platforms",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_chains_ropes_hooks_slings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_switches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_wiring",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_fixed_installations",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_portable_lighting",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_portable_tools",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_welding_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_fire_fighting_appliances",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_means_of_escape",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_dangerous_goods_stores",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_gas_welding_cylinders",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_asbestos_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_dust_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_noise_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_protection_from_dangerous_substances",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_first_aid_equipment",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_washing_facilities",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_latrine",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_woodworking_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_loadshifting_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_abrasive_wheels",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_power_presses",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_housekeeping",
+          "daily_values": [
+            "N/A",
+            "P",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_safety_nets_and_fans",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_stacking_of_materials",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_passageways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_lighting",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_ventilation",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_notice_of_employment",
+          "daily_values": [
+            "N/A",
+            "YES",
+            "YES",
+            "YES",
+            "YES",
+            "YES",
+            "YES"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_helmets",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_eye_protectors",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_ear_protectors",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "S",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_respirators",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_safety_belts",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_gloves",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_safety_shoes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_reflective_jackets",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        }
+      ],
+      "recommendations": [
+        {
+          "recommendation_id": "F3A-R03-REC-01",
+          "page_number": 4,
+          "recommendation": "Scaffold protection remains incomplete and the available follow-up evidence does not confirm completion. Maintain access control and provide dated evidence after corrective work.",
+          "extraction_status": "Confirmed",
+          "linked_observations": [
+            {
+              "item_id": "working_at_height_scaffolds",
+              "inspection_date": "2026-06-16"
+            }
+          ],
+          "source_reference": {
+            "report_id": "F3A-R03",
+            "page_number": 4,
+            "recommendation_entry_id": "F3A-R03-REC-01",
+            "display_reference": "F3A-R03 / p.4 / Recommendation 1"
+          }
+        }
+      ],
+      "signatures": {
+        "safety_supervisor_signature": {
+          "value": "FICTIONAL-TYPED-MARK-SS-03",
+          "extraction_status": "Confirmed"
+        },
+        "safety_supervisor_date": {
+          "value": "2026-06-20",
+          "extraction_status": "Confirmed"
+        },
+        "report_discussion_acknowledgement": {
+          "value": "Discussed with fictional site representatives for F3A-R03",
+          "extraction_status": "Confirmed"
+        },
+        "report_discussion_date": {
+          "value": "2026-06-20",
+          "extraction_status": "Confirmed"
+        },
+        "proprietor_or_safety_officer_signature": {
+          "value": null,
+          "extraction_status": "Needs review"
+        }
+      }
+    },
+    {
+      "report_id": "F3A-R04",
+      "week_start_date": "2026-06-21",
+      "week_end_date": "2026-06-27",
+      "page_count": 4,
+      "number_of_workers": 44,
+      "item_ratings": [
+        {
+          "item_id": "access_and_egress_gangways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_ladders",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_passageways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_scaffolds",
+          "daily_values": [
+            "N/A",
+            "S",
+            "S",
+            "S",
+            "G",
+            "S",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_working_platforms",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_floor_edges_openings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_lift_shafts_openings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_excavations",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_trenches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_caissons",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_tunnels",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_slopes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_cranes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_winches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_pulley_blocks",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_passenger_hoists",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_material_or_skip_hoists",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_suspended_working_platforms",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_chains_ropes_hooks_slings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_switches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_wiring",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_fixed_installations",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_portable_lighting",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_portable_tools",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_welding_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_fire_fighting_appliances",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_means_of_escape",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_dangerous_goods_stores",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_gas_welding_cylinders",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "S",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_asbestos_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_dust_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_noise_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_protection_from_dangerous_substances",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_first_aid_equipment",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_washing_facilities",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_latrine",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_woodworking_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_loadshifting_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_abrasive_wheels",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_power_presses",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_housekeeping",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_safety_nets_and_fans",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_stacking_of_materials",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_passageways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_lighting",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_ventilation",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_notice_of_employment",
+          "daily_values": [
+            "N/A",
+            "YES",
+            "YES",
+            "YES",
+            "YES",
+            "YES",
+            "YES"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_helmets",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_eye_protectors",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_ear_protectors",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "S",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_respirators",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_safety_belts",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_gloves",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_safety_shoes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_reflective_jackets",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        }
+      ],
+      "recommendations": [
+        {
+          "recommendation_id": "F3A-R04-REC-01",
+          "page_number": 4,
+          "recommendation": "Corrective work to the scaffold toe boards and access control is recorded. Continue routine checks and retain the dated completion record.",
+          "extraction_status": "Confirmed",
+          "linked_observations": [
+            {
+              "item_id": "working_at_height_scaffolds",
+              "inspection_date": "2026-06-23"
+            }
+          ],
+          "source_reference": {
+            "report_id": "F3A-R04",
+            "page_number": 4,
+            "recommendation_entry_id": "F3A-R04-REC-01",
+            "display_reference": "F3A-R04 / p.4 / Recommendation 1"
+          }
+        }
+      ],
+      "signatures": {
+        "safety_supervisor_signature": {
+          "value": "FICTIONAL-TYPED-MARK-SS-04",
+          "extraction_status": "Confirmed"
+        },
+        "safety_supervisor_date": {
+          "value": "2026-06-27",
+          "extraction_status": "Confirmed"
+        },
+        "report_discussion_acknowledgement": {
+          "value": "Discussed with fictional site representatives for F3A-R04",
+          "extraction_status": "Confirmed"
+        },
+        "report_discussion_date": {
+          "value": "2026-06-27",
+          "extraction_status": "Confirmed"
+        },
+        "proprietor_or_safety_officer_signature": {
+          "value": "FICTIONAL-TYPED-MARK-ACK-04",
+          "extraction_status": "Confirmed"
+        }
+      }
+    },
+    {
+      "report_id": "F3A-R05",
+      "week_start_date": "2026-06-28",
+      "week_end_date": "2026-07-04",
+      "page_count": 4,
+      "number_of_workers": 46,
+      "item_ratings": [
+        {
+          "item_id": "access_and_egress_gangways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_ladders",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_passageways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "access_and_egress_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_scaffolds",
+          "daily_values": [
+            "N/A",
+            "P",
+            "P",
+            "P",
+            "S",
+            "P",
+            "S"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_working_platforms",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_floor_edges_openings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_lift_shafts_openings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "working_at_height_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_excavations",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_trenches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_caissons",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_tunnels",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_slopes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "earthwork_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_cranes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_winches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_pulley_blocks",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_passenger_hoists",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_material_or_skip_hoists",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_suspended_working_platforms",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_chains_ropes_hooks_slings",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "lifting_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_switches",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_wiring",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_fixed_installations",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_portable_lighting",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_portable_tools",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_welding_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "electricity_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_fire_fighting_appliances",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_means_of_escape",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_dangerous_goods_stores",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_gas_welding_cylinders",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "fire_prevention_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_asbestos_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_dust_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_noise_control",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_protection_from_dangerous_substances",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_first_aid_equipment",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_washing_facilities",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_latrine",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "health_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_woodworking_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_loadshifting_machines",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_abrasive_wheels",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_power_presses",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "machinery_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_housekeeping",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_safety_nets_and_fans",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_stacking_of_materials",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_passageways",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "S",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_lighting",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_ventilation",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_notice_of_employment",
+          "daily_values": [
+            "N/A",
+            "YES",
+            "YES",
+            "YES",
+            "YES",
+            "YES",
+            "YES"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "general_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_helmets",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_eye_protectors",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_ear_protectors",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "S",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_respirators",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_safety_belts",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_gloves",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_safety_shoes",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_reflective_jackets",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        },
+        {
+          "item_id": "ppe_others",
+          "daily_values": [
+            "N/A",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          "extraction_status": "Confirmed"
+        }
+      ],
+      "recommendations": [
+        {
+          "recommendation_id": "F3A-R05-REC-01",
+          "page_number": 4,
+          "recommendation": "A similar scaffold protection gap was observed again after a period of adverse weather; no causal conclusion is made. Restore the protection and record the follow-up check.",
+          "extraction_status": "Confirmed",
+          "linked_observations": [
+            {
+              "item_id": "working_at_height_scaffolds",
+              "inspection_date": "2026-06-30"
+            }
+          ],
+          "source_reference": {
+            "report_id": "F3A-R05",
+            "page_number": 4,
+            "recommendation_entry_id": "F3A-R05-REC-01",
+            "display_reference": "F3A-R05 / p.4 / Recommendation 1"
+          }
+        },
+        {
+          "recommendation_id": "F3A-R05-REC-02",
+          "page_number": 4,
+          "recommendation": "Reviewed transcription: Keep the internal route clear and confirm the referenced access point after the next inspection.",
+          "extraction_status": "Needs review",
+          "linked_observations": [
+            {
+              "item_id": "general_passageways",
+              "inspection_date": "2026-07-02"
+            }
+          ],
+          "source_reference": {
+            "report_id": "F3A-R05",
+            "page_number": 4,
+            "recommendation_entry_id": "F3A-R05-REC-02",
+            "display_reference": "F3A-R05 / p.4 / Recommendation 2"
+          }
+        }
+      ],
+      "signatures": {
+        "safety_supervisor_signature": {
+          "value": "FICTIONAL-TYPED-MARK-SS-05",
+          "extraction_status": "Confirmed"
+        },
+        "safety_supervisor_date": {
+          "value": "2026-07-04",
+          "extraction_status": "Confirmed"
+        },
+        "report_discussion_acknowledgement": {
+          "value": "Discussed with fictional site representatives for F3A-R05",
+          "extraction_status": "Confirmed"
+        },
+        "report_discussion_date": {
+          "value": "2026-07-04",
+          "extraction_status": "Confirmed"
+        },
+        "proprietor_or_safety_officer_signature": {
+          "value": "FICTIONAL-TYPED-MARK-ACK-05",
+          "extraction_status": "Confirmed"
+        }
+      }
+    }
+  ],
+  "extraction_review_annotations": [
+    {
+      "case_id": "EXTRACTION-REVIEW-01",
+      "case_type": "unclear_handwritten_recommendation",
+      "extraction_status": "Needs review",
+      "issue_description": "The handwritten-style Page 4 entry requires confirmation against the reviewed transcription.",
+      "source_reference": {
+        "report_id": "F3A-R01",
+        "page_number": 4,
+        "recommendation_entry_id": "F3A-R01-REC-02",
+        "display_reference": "F3A-R01 / p.4 / Recommendation 2"
+      }
+    },
+    {
+      "case_id": "EXTRACTION-REVIEW-02",
+      "case_type": "missing_or_unclear_acknowledgement_signature",
+      "extraction_status": "Needs review",
+      "issue_description": "The acknowledgement signature is intentionally absent and requires human confirmation.",
+      "source_reference": {
+        "report_id": "F3A-R03",
+        "page_number": 4,
+        "field_id": "proprietor_or_safety_officer_signature",
+        "display_reference": "F3A-R03 / p.4 / Proprietor or Safety Officer signature"
+      }
+    },
+    {
+      "case_id": "EXTRACTION-REVIEW-03",
+      "case_type": "ambiguous_recommendation_item_reference",
+      "extraction_status": "Needs review",
+      "issue_description": "The handwritten-style item reference is ambiguous; the reviewed demonstration interpretation links it to General / Passageways.",
+      "source_reference": {
+        "report_id": "F3A-R05",
+        "page_number": 4,
+        "item_id": "general_passageways",
+        "recommendation_entry_id": "F3A-R05-REC-02",
+        "display_reference": "F3A-R05 / p.4 / Recommendation 2 / General / Passageways"
+      }
+    }
+  ],
+  "story_expectations": {
+    "scaffold_item_id": "working_at_height_scaffolds",
+    "scaffold_weekly_dominant_sequence": [
+      "S",
+      "P",
+      "P",
+      "S",
+      "P"
+    ],
+    "required_finding_types": [
+      "repeated_or_worsening_rating",
+      "improved_then_recurred",
+      "rating_recommendation_inconsistency",
+      "poor_without_recommendation",
+      "missing_follow_up_evidence"
+    ],
+    "intentional_ladder_inconsistency_count": 1,
+    "minimum_poor_without_recommendation": 1,
+    "expected_finding_references": [
+      {
+        "finding_type": "repeated_or_worsening_rating",
+        "evidence": [
+          {
+            "report_id": "F3A-R02",
+            "page_number": 1,
+            "item_id": "working_at_height_scaffolds",
+            "inspection_date": "2026-06-09",
+            "display_reference": "F3A-R02 / p.1 / Working at Height / Scaffolds / Tuesday",
+            "recommendation_entry_id": "F3A-R02-REC-01"
+          },
+          {
+            "report_id": "F3A-R03",
+            "page_number": 1,
+            "item_id": "working_at_height_scaffolds",
+            "inspection_date": "2026-06-16",
+            "display_reference": "F3A-R03 / p.1 / Working at Height / Scaffolds / Tuesday",
+            "recommendation_entry_id": "F3A-R03-REC-01"
+          }
+        ]
+      },
+      {
+        "finding_type": "improved_then_recurred",
+        "evidence": [
+          {
+            "report_id": "F3A-R03",
+            "page_number": 1,
+            "item_id": "working_at_height_scaffolds",
+            "inspection_date": "2026-06-16",
+            "display_reference": "F3A-R03 / p.1 / Working at Height / Scaffolds / Tuesday",
+            "recommendation_entry_id": "F3A-R03-REC-01"
+          },
+          {
+            "report_id": "F3A-R04",
+            "page_number": 1,
+            "item_id": "working_at_height_scaffolds",
+            "inspection_date": "2026-06-23",
+            "display_reference": "F3A-R04 / p.1 / Working at Height / Scaffolds / Tuesday",
+            "recommendation_entry_id": "F3A-R04-REC-01"
+          },
+          {
+            "report_id": "F3A-R05",
+            "page_number": 1,
+            "item_id": "working_at_height_scaffolds",
+            "inspection_date": "2026-06-30",
+            "display_reference": "F3A-R05 / p.1 / Working at Height / Scaffolds / Tuesday",
+            "recommendation_entry_id": "F3A-R05-REC-01"
+          }
+        ]
+      },
+      {
+        "finding_type": "rating_recommendation_inconsistency",
+        "evidence": [
+          {
+            "report_id": "F3A-R02",
+            "page_number": 1,
+            "item_id": "access_and_egress_ladders",
+            "inspection_date": "2026-06-10",
+            "display_reference": "F3A-R02 / p.1 / Access and Egress / Ladders / Wednesday",
+            "recommendation_entry_id": "F3A-R02-REC-02"
+          }
+        ]
+      },
+      {
+        "finding_type": "poor_without_recommendation",
+        "evidence": [
+          {
+            "report_id": "F3A-R03",
+            "page_number": 3,
+            "item_id": "general_housekeeping",
+            "inspection_date": "2026-06-15",
+            "display_reference": "F3A-R03 / p.3 / General / Housekeeping / Monday"
+          }
+        ]
+      },
+      {
+        "finding_type": "missing_follow_up_evidence",
+        "evidence": [
+          {
+            "report_id": "F3A-R03",
+            "page_number": 1,
+            "item_id": "working_at_height_scaffolds",
+            "inspection_date": "2026-06-16",
+            "display_reference": "F3A-R03 / p.1 / Working at Height / Scaffolds / Tuesday",
+            "recommendation_entry_id": "F3A-R03-REC-01"
+          }
+        ]
+      }
+    ]
+  }
+}
