@@ -54,6 +54,7 @@ last_test_results:
   forbidden_fields_and_context: PASS (no remark/remarks fields; no weather, safety-alert, causation, legal conclusion, OCR implementation, or rating changes)
   scope_check: PASS (no frontend, screens, routes, CSS, database, auth, deployment, ADK, MCP, manifest, or Gate 5 findings)
   diff_check: PASS
+  workflow_commit_identity_hardening: PASS (AGENTS.md and both controllers now treat AUTORUN_STATE last_verified_commit as authoritative; external chat-supplied commit hashes are advisory only)
 reviewer_verdict: PASS
-updated_at: 2026-07-05T01:04:01+08:00
+updated_at: 2026-07-05T01:10:00+08:00
 ```
