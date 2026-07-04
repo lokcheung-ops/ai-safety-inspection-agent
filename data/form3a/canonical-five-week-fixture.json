@@ -80,12 +80,12 @@
           "item_id": "working_at_height_scaffolds",
           "daily_values": [
             "N/A",
+            "G",
             "S",
             "S",
             "S",
             "G",
-            "S",
-            "G"
+            "S"
           ],
           "extraction_status": "Confirmed"
         },
@@ -998,7 +998,7 @@
             "P",
             "P",
             "S",
-            "P",
+            "S",
             "S"
           ],
           "extraction_status": "Confirmed"
@@ -1914,7 +1914,7 @@
             "P",
             "P",
             "S",
-            "P"
+            "S"
           ],
           "extraction_status": "Confirmed"
         },
@@ -2808,8 +2808,8 @@
             "S",
             "S",
             "S",
-            "G",
             "S",
+            "G",
             "G"
           ],
           "extraction_status": "Confirmed"
@@ -3705,8 +3705,8 @@
             "P",
             "P",
             "S",
-            "P",
-            "S"
+            "S",
+            "G"
           ],
           "extraction_status": "Confirmed"
         },
@@ -4495,7 +4495,7 @@
         {
           "recommendation_id": "F3A-R05-REC-01",
           "page_number": 4,
-          "recommendation": "A similar scaffold protection gap was observed again after a period of adverse weather; no causal conclusion is made. Restore the protection and record the follow-up check.",
+          "recommendation": "A similar scaffold protection gap was observed again in the demonstration area. Restore the protection and record the follow-up check.",
           "extraction_status": "Confirmed",
           "linked_observations": [
             {

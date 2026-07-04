@@ -43,6 +43,12 @@ function assertNoProhibitedKeys(value: unknown): void {
     for (const [key, child] of Object.entries(value)) {
       if (/^remarks?$/i.test(key)) throw new Error(`Prohibited field: ${key}`);
       if (/ocr.?confidence/i.test(key)) throw new Error(`Prohibited OCR confidence field: ${key}`);
+      if (
+        typeof child === "string" &&
+        /\b(weather|typhoon|rain(?:fall|y)?|storm|safety[ -]?alert)\b/i.test(child)
+      ) {
+        throw new Error(`Prohibited external context in field: ${key}`);
+      }
       assertNoProhibitedKeys(child);
     }
   }
@@ -208,37 +214,50 @@ export function validateCanonicalFixture(input: unknown): CanonicalFixture {
     throw new Error("Daily scaffold values do not match the expected weekly sequence");
   }
 
-  const intentionalCases = fixture.reports.flatMap((report) =>
+  const markedIntentionalCases = fixture.reports.flatMap((report) =>
     report.recommendations
       .filter((entry) => entry.intentional_case === "rating_recommendation_inconsistency")
       .map((recommendation) => ({ report, recommendation })),
   );
-  if (
-    intentionalCases.length !== fixture.story_expectations.intentional_ladder_inconsistency_count
-  ) {
-    throw new Error("Incorrect intentional ladder inconsistency count");
-  }
-  for (const { report, recommendation } of intentionalCases) {
-    const link = recommendation.linked_observations[0];
-    const ladder = report.item_ratings.find(
-      (entry) => entry.item_id === "access_and_egress_ladders",
-    );
-    if (
-      recommendation.linked_observations.length !== 1 ||
-      link?.item_id !== "access_and_egress_ladders" ||
-      ladder === undefined ||
-      ladder.daily_values[
-        Math.round(
+  const derivedLadderInconsistencies = fixture.reports.flatMap((report) =>
+    report.recommendations.flatMap((recommendation) => {
+      const hasLinkedGoodLadderRating = recommendation.linked_observations.some((link) => {
+        if (link.item_id !== "access_and_egress_ladders") return false;
+        const ladder = report.item_ratings.find((entry) => entry.item_id === link.item_id);
+        const dayIndex = Math.round(
           (Date.parse(`${link.inspection_date}T00:00:00Z`) -
             Date.parse(`${report.week_start_date}T00:00:00Z`)) /
             86_400_000,
-        )
-      ] !== "G" ||
-      !/damaged ladder side rail/i.test(recommendation.recommendation) ||
-      !/remove.*from use|replace|isolate/i.test(recommendation.recommendation)
-    ) {
-      throw new Error("Intentional ladder inconsistency does not resolve to the required evidence");
-    }
+        );
+        return ladder?.daily_values[dayIndex] === "G";
+      });
+      const describesDamagedLadder = /damaged ladder(?: side rail)?/i.test(
+        recommendation.recommendation,
+      );
+      const requestsCorrectiveAction = /remove.*from use|replace|isolate/i.test(
+        recommendation.recommendation,
+      );
+      return hasLinkedGoodLadderRating && describesDamagedLadder && requestsCorrectiveAction
+        ? [{ report, recommendation }]
+        : [];
+    }),
+  );
+  if (
+    derivedLadderInconsistencies.length !==
+    fixture.story_expectations.intentional_ladder_inconsistency_count
+  ) {
+    throw new Error("Incorrect evidence-derived ladder inconsistency count");
+  }
+  const derivedRecommendationIds = new Set(
+    derivedLadderInconsistencies.map(({ recommendation }) => recommendation.recommendation_id),
+  );
+  if (
+    markedIntentionalCases.length !== derivedLadderInconsistencies.length ||
+    markedIntentionalCases.some(
+      ({ recommendation }) => !derivedRecommendationIds.has(recommendation.recommendation_id),
+    )
+  ) {
+    throw new Error("Ladder inconsistency marker does not match the derived evidence");
   }
 
   const linkedObservations = new Set(

@@ -23,6 +23,14 @@ const EXPECTED_FINDING_TYPES = [
   "missing_follow_up_evidence",
 ] as const;
 
+const EXPECTED_SCAFFOLD_DAILY_VALUES = [
+  ["N/A", "G", "S", "S", "S", "G", "S"],
+  ["N/A", "P", "P", "P", "S", "S", "S"],
+  ["N/A", "P", "P", "P", "P", "S", "S"],
+  ["N/A", "S", "S", "S", "S", "G", "G"],
+  ["N/A", "P", "P", "P", "S", "S", "G"],
+] as const;
+
 function addDays(date: string, days: number): string {
   const value = new Date(`${date}T00:00:00Z`);
   value.setUTCDate(value.getUTCDate() + days);
@@ -95,14 +103,30 @@ describe("canonical five-week Form 3A fixture", () => {
 
   it("derives the scaffold story from daily values independently of its expectations", () => {
     const fixture = loadCanonicalFixture();
-    const derivedSequence = fixture.reports.map((report) => {
-      const scaffold = report.item_ratings.find(
-        (entry) => entry.item_id === "working_at_height_scaffolds",
-      )!;
-      return calculateWeeklyRatingSummary(scaffold.daily_values).weekly_dominant_rating;
-    });
+    const scaffoldDailyValues = fixture.reports.map(
+      (report) =>
+        report.item_ratings.find(
+          (entry) => entry.item_id === "working_at_height_scaffolds",
+        )!.daily_values,
+    );
+    const summaries = scaffoldDailyValues.map(calculateWeeklyRatingSummary);
 
-    expect(derivedSequence).toEqual(["S", "P", "P", "S", "P"]);
+    expect(scaffoldDailyValues).toEqual(EXPECTED_SCAFFOLD_DAILY_VALUES);
+    expect(summaries.map((summary) => summary.weekly_dominant_rating)).toEqual([
+      "S",
+      "P",
+      "P",
+      "S",
+      "P",
+    ]);
+    expect(summaries[1]).toEqual(
+      expect.objectContaining({
+        p_count: 3,
+        s_count: 3,
+        tie_break_applied: true,
+        weekly_dominant_rating: "P",
+      }),
+    );
     expect(fixture.story_expectations.scaffold_weekly_dominant_sequence).toEqual([
       "S",
       "P",
@@ -137,6 +161,38 @@ describe("canonical five-week Form 3A fixture", () => {
     );
     expect(ladder.daily_values[dayIndex]).toBe("G");
   });
+
+  it("rejects a second evidence-derived ladder inconsistency without a marker", () => {
+    const fixture = structuredClone(loadCanonicalFixture());
+    fixture.reports[0]!.recommendations.push({
+      recommendation_id: "F3A-R01-REC-03",
+      page_number: 4,
+      recommendation:
+        "Damaged ladder side rail observed at the fictional access. Remove the ladder from use and replace it before further work.",
+      extraction_status: "Confirmed",
+      linked_observations: [
+        { item_id: "access_and_egress_ladders", inspection_date: "2026-06-01" },
+      ],
+      source_reference: {
+        report_id: "F3A-R01",
+        page_number: 4,
+        recommendation_entry_id: "F3A-R01-REC-03",
+        display_reference: "F3A-R01 / p.4 / Recommendation 3",
+      },
+    });
+
+    expect(() => validateCanonicalFixture(fixture)).toThrow(/ladder inconsistency/i);
+  });
+
+  it.each(["Weather conditions were noted.", "A safety alert was received."])(
+    "rejects external context in fixture facts: %s",
+    (externalContext) => {
+      const fixture = structuredClone(loadCanonicalFixture());
+      fixture.reports[0]!.recommendations[0]!.recommendation = externalContext;
+
+      expect(() => validateCanonicalFixture(fixture)).toThrow(/external context/i);
+    },
+  );
 
   it("contains a Poor observation without a linked recommendation", () => {
     const fixture = loadCanonicalFixture();
