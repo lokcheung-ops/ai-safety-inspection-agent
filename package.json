@@ -20,6 +20,8 @@
     "render:gate4c": "sh scripts/render-gate4c-pages.sh",
     "test:gate4d": "vitest run tests/form3a/ui-projection.test.ts",
     "generate:gate4d": "node --import tsx src/form3a/generate-gate4d.ts",
+    "test:gate5": "vitest run tests/form3a/findings.test.ts",
+    "generate:gate5": "node --import tsx src/form3a/generate-gate5.ts",
     "test": "vitest run",
     "lint": "eslint src tests",
     "typecheck": "tsc --noEmit",
