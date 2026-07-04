@@ -3,7 +3,7 @@
 ```yaml
 current_gate: Gate 4C
 current_role: Main
-current_state: READY_FOR_GATE_4C
+current_state: BLOCKED
 last_completed_gate: Gate 4B
 last_verified_commit: 871da5d6b4749ecfb920b8bc912e5f9aa6122f5c
 active_prompt: prompts/gate-4c-implementation.md
@@ -12,48 +12,44 @@ allowed_next_states:
   - READY_FOR_GATE_4C_REVIEW
   - REPAIR_REQUIRED
   - BLOCKED
-blocker: null
+blocker: Gate 4C implementation and validation are complete but uncommitted; the platform approval reviewer usage limit prevented staging .gitattributes, committing, and pushing. Resume Main after the usage limit resets. Gate 4D remains blocked.
 last_commands:
   - git pull --ff-only origin main
   - node --version
   - corepack pnpm --version
+  - CI=true corepack pnpm install --frozen-lockfile
+  - CI=true corepack pnpm generate:gate4c
+  - CI=true corepack pnpm test:gate4c
   - CI=true corepack pnpm test:gate4b
   - CI=true corepack pnpm test:gate4a
   - CI=true corepack pnpm lint
   - CI=true corepack pnpm typecheck
+  - CI=true corepack pnpm build
   - CI=true corepack pnpm test
-  - temporary clean checkout with CI=true corepack pnpm install --frozen-lockfile
-  - temporary clean checkout with CI=true corepack pnpm generate:gate4b
-  - temporary clean checkout XLSX payload comparison
-  - temporary clean checkout with CI=true corepack pnpm build
-  - workbook cell-by-cell semantic inspection
-  - workbook XML frozen-pane and filter inspection
-  - forbidden-field and external-context scan
+  - PATH=<bundled-poppler>:$PATH CI=true corepack pnpm render:gate4c
+  - pdfinfo page-count inspection for six generated PDFs
+  - twenty-page rendered visual QA
   - git diff --check
   - git status --short
 last_test_results:
   runtime: Node v24.14.1; pnpm 11.7.0
   frozen_install: PASS
-  gate_4b_generation: PASS (ExcelJS 4.4.0 declared in package.json and frozen lockfile; artifact-tool absent)
+  gate_4c_generation: PASS (five four-page PDFs and one combined twenty-page PDF)
+  gate_4c_tests: PASS (5/5; bilingual labels, daily rating counts, recommendations, signatures, report/page order, deterministic bytes)
   gate_4b_tests: PASS (8/8)
   gate_4a_tests: PASS (7/7)
   lint: PASS
   typecheck: PASS
   build: PASS
-  full_tests: PASS (61/61)
-  clean_environment_generation: PASS (temporary checkout without node_modules or pre-existing XLSX; 221 lockfile packages installed; no symlink or injected bundled runtime; generation, build, and full tests passed)
-  workbook_semantic_parity: PASS (all cells match canonical and derived workbook data; required sheet row counts 5, 2275, 8, 3, 325, 5, 79)
-  xlsx_payload_reproducibility: PASS (regenerated and committed archives have identical extracted payloads)
-  frozen_pane_xml: PASS (7/7 worksheet XML files contain ySplit="1", topLeftCell="A2", and state="frozen")
-  filters: PASS (7/7 table XML files contain autoFilter)
-  typed_dates: PASS
-  stable_sheet_order_and_ids: PASS
+  full_tests: PASS (66/66)
+  pdf_page_counts: PASS (F3A-R01 through F3A-R05 each 4 pages; combined PDF 20 pages)
+  pdf_visual_qa: PASS (20/20 pages rendered and reviewed for clipping, overlap, borders, glyphs, page breaks, and readability)
+  font_policy: PASS (declared OFL-1.1 Noto Sans HK dependency; no proprietary or system font files copied or committed)
+  deterministic_pdf_bytes: PASS
   recommendation_only_model: PASS
-  expected_findings_placeholders: PASS (5/5 rows labelled EXPECTATION_ONLY)
-  forbidden_fields_and_context: PASS (no remark/remarks fields; no weather or safety-alert context)
-  workflow_hardening: PASS (origin/main authority, Main validated push, and Reviewer state-only push rules documented)
-  diff_check: PASS
-  scope_check: PASS (workflow hardening only; Gate 4C implementation not started)
+  forbidden_fields_and_context: PASS (no remark/remarks fields; no weather, safety-alert, causation, legal conclusion, OCR implementation, or rating changes)
+  diff_check: PASS before staging PDFs; cached diff check requires the uncommitted .gitattributes PDF binary rule
+  scope_check: PASS (Gate 4C PDF and PDF QA only; Gate 4D not started)
 reviewer_verdict: PASS
-updated_at: 2026-07-04T20:52:39+08:00
+updated_at: 2026-07-04T21:19:01+08:00
 ```
