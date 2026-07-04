@@ -184,7 +184,15 @@ describe("canonical five-week Form 3A fixture", () => {
     expect(() => validateCanonicalFixture(fixture)).toThrow(/ladder inconsistency/i);
   });
 
-  it.each(["Weather conditions were noted.", "A safety alert was received."])(
+  it.each([
+    "Weather conditions were noted.",
+    "A safety alert was received.",
+    "High winds caused the scaffold gap.",
+    "Wind speed was measured at 45 km/h.",
+    "Humidity was measured at 90 percent.",
+    "Temperature was measured at 33 C.",
+    "Precipitation was recorded.",
+  ])(
     "rejects external context in fixture facts: %s",
     (externalContext) => {
       const fixture = structuredClone(loadCanonicalFixture());

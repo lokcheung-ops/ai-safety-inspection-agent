@@ -45,7 +45,9 @@ function assertNoProhibitedKeys(value: unknown): void {
       if (/ocr.?confidence/i.test(key)) throw new Error(`Prohibited OCR confidence field: ${key}`);
       if (
         typeof child === "string" &&
-        /\b(weather|typhoon|rain(?:fall|y)?|storm|safety[ -]?alert)\b/i.test(child)
+        /\b(weather|typhoon|cyclone|monsoon|rain(?:fall|y)?|snow(?:fall|y)?|hail|storm|thunder(?:storm)?|lightning|fog(?:gy)?|wind(?:s|y)?|gust(?:s|y)?|precipitation|temperature|humidity|barometric\s+pressure|dew\s+point|heatwave|cold\s+snap|safety[ -]?alert)\b/i.test(
+          child,
+        )
       ) {
         throw new Error(`Prohibited external context in field: ${key}`);
       }
