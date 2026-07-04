@@ -2,17 +2,17 @@
 
 ```yaml
 current_gate: Gate 4C
-current_role: Main
-current_state: BLOCKED
-last_completed_gate: Gate 4B
-last_verified_commit: 871da5d6b4749ecfb920b8bc912e5f9aa6122f5c
-active_prompt: prompts/gate-4c-implementation.md
-required_next_role: Main
+current_role: Reviewer
+current_state: READY_FOR_GATE_4C_REVIEW
+last_completed_gate: Gate 4C implementation
+last_verified_commit: ed296922262365bb2c90db87f565c19893f1002d
+active_prompt: prompts/gate-4c-review.md
+required_next_role: Independent Reviewer
 allowed_next_states:
-  - READY_FOR_GATE_4C_REVIEW
+  - READY_FOR_GATE_4D
   - REPAIR_REQUIRED
   - BLOCKED
-blocker: Gate 4C implementation and validation are complete but uncommitted; the platform approval reviewer usage limit prevented staging .gitattributes, committing, and pushing. Resume Main after the usage limit resets. Gate 4D remains blocked.
+blocker: Gate 4D is blocked pending an independent Gate 4C verdict.
 last_commands:
   - git pull --ff-only origin main
   - node --version
@@ -48,8 +48,8 @@ last_test_results:
   deterministic_pdf_bytes: PASS
   recommendation_only_model: PASS
   forbidden_fields_and_context: PASS (no remark/remarks fields; no weather, safety-alert, causation, legal conclusion, OCR implementation, or rating changes)
-  diff_check: PASS before staging PDFs; cached diff check requires the uncommitted .gitattributes PDF binary rule
+  diff_check: PASS
   scope_check: PASS (Gate 4C PDF and PDF QA only; Gate 4D not started)
-reviewer_verdict: PASS
-updated_at: 2026-07-04T21:19:01+08:00
+reviewer_verdict: PENDING
+updated_at: 2026-07-04T21:35:00+08:00
 ```
