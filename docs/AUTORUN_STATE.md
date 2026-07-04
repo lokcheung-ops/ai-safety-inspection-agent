@@ -2,16 +2,17 @@
 
 ```yaml
 current_gate: Gate 3
-current_role: Main
-current_state: REPAIR_REQUIRED
-last_completed_gate: Gate 3 implementation
-last_verified_commit: a54379bd607095dbd1b9c142a99a130f3d3d79cf
-active_prompt: prompts/gate-3-implementation.md
-required_next_role: Main
+current_role: Reviewer
+current_state: READY_FOR_GATE_3_REVIEW
+last_completed_gate: Gate 3 implementation and repair
+last_verified_commit: 380a8b6518fe77a47407819f74310ee68745486c
+active_prompt: prompts/gate-3-review.md
+required_next_role: Independent Reviewer
 allowed_next_states:
-  - READY_FOR_GATE_3_REVIEW
+  - READY_FOR_GATE_4A
+  - REPAIR_REQUIRED
   - BLOCKED
-blocker: Gate 4A is blocked pending repair of canonical scaffold values, removal of weather context, and derived enforcement of exactly one ladder inconsistency.
+blocker: Gate 4A is blocked pending an independent Gate 3 re-review.
 last_commands:
   - node --version
   - corepack pnpm --version
@@ -25,12 +26,12 @@ last_commands:
 last_test_results:
   runtime: Node v24.14.1; pnpm 11.7.0
   frozen_install: PASS
-  gate_3_tests: PASS (11/11)
+  gate_3_tests: PASS (14/14)
   lint: PASS
   typecheck: PASS
   build: PASS
-  full_tests: PASS (38/38)
+  full_tests: PASS (41/41)
   diff_check: PASS
-reviewer_verdict: FAIL
-updated_at: 2026-07-04T11:38:40+08:00
+reviewer_verdict: PENDING
+updated_at: 2026-07-04T11:41:32+08:00
 ```
