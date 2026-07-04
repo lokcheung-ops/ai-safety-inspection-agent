@@ -14,18 +14,21 @@
     "generate:gate4a": "node --import tsx src/form3a/generate-gate4a.ts",
     "test:gate4b": "vitest run tests/form3a/xlsx.test.ts",
     "generate:gate4b": "node --import tsx scripts/generate-gate4b.mjs",
+    "validate:gate4b:clean": "sh scripts/validate-gate4b-clean-install.sh",
     "test": "vitest run",
     "lint": "eslint src tests",
     "typecheck": "tsc --noEmit",
     "build": "tsc -p tsconfig.build.json"
   },
   "dependencies": {
+    "exceljs": "4.4.0",
     "zod": "4.4.3"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
     "@types/node": "24.13.2",
     "eslint": "10.6.0",
+    "fflate": "0.8.2",
     "tsx": "4.22.5",
     "typescript": "6.0.3",
     "typescript-eslint": "8.62.1",

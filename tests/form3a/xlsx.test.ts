@@ -1,4 +1,7 @@
-import { FileBlob, SpreadsheetFile } from "@oai/artifact-tool";
+import fs from "node:fs/promises";
+
+import ExcelJS from "exceljs";
+import { strFromU8, unzipSync } from "fflate";
 import { describe, expect, it } from "vitest";
 
 import { loadFieldCatalogue } from "../../src/form3a/catalogue.js";
@@ -116,24 +119,49 @@ describe("Gate 4B normalized XLSX", () => {
       loadNormalizedData(),
       loadFieldCatalogue(),
     );
-    const workbook = await SpreadsheetFile.importXlsx(await FileBlob.load(NORMALIZED_XLSX_PATH));
+    const workbook = new ExcelJS.Workbook();
+    await workbook.xlsx.readFile(NORMALIZED_XLSX_PATH);
 
     EXPECTED_SHEETS.forEach((name, index) => {
-      const sheet = workbook.worksheets.getItemAt(index);
+      const sheet = workbook.worksheets[index]!;
       expect(sheet.name).toBe(name);
       const expected = workbookData[index]!;
-      const lastColumn = columnName(expected.headers.length);
-      expect(sheet.getRange(`A1:${lastColumn}1`).values[0]).toEqual(expected.headers);
-      expect(sheet.getRange(`A2:A${expected.rows.length + 1}`).values).toHaveLength(
-        expected.rows.length,
-      );
-      expect(sheet.tables.items).toHaveLength(1);
-      expect(sheet.tables.items[0]!.showFilterButton).toBe(true);
+      const headerValues = sheet.getRow(1).values;
+      expect(Array.isArray(headerValues) ? headerValues.slice(1) : []).toEqual(expected.headers);
+      expect(sheet.rowCount).toBe(expected.rows.length + 1);
+      expect(sheet.getTable(`Gate4BTable${index + 1}`).headerRow).toBe(true);
     });
 
-    const reports = workbook.worksheets.getItem("Reports");
-    expect(typeof reports.getRange("B2").values[0]![0]).toBe("number");
-    expect(reports.getRange("B2").format.numberFormat).toBe("yyyy-mm-dd");
+    const reports = workbook.getWorksheet("Reports")!;
+    expect(reports.getCell("B2").value).toBeInstanceOf(Date);
+    expect(reports.getCell("B2").numFmt).toBe("yyyy-mm-dd");
+  });
+
+  it("persists a frozen first row in every worksheet XML", async () => {
+    const archive = unzipSync(new Uint8Array(await fs.readFile(NORMALIZED_XLSX_PATH)));
+    const worksheetPaths = Object.keys(archive)
+      .filter((name) => /^xl\/worksheets\/sheet\d+\.xml$/.test(name))
+      .sort((left, right) => worksheetNumber(left) - worksheetNumber(right));
+
+    expect(worksheetPaths).toHaveLength(EXPECTED_SHEETS.length);
+    worksheetPaths.forEach((worksheetPath) => {
+      const xml = strFromU8(archive[worksheetPath]!);
+      expect(xml, worksheetPath).toContain('ySplit="1"');
+      expect(xml, worksheetPath).toContain('topLeftCell="A2"');
+      expect(xml, worksheetPath).toContain('state="frozen"');
+    });
+  });
+
+  it("uses only declared dependencies for Gate 4B XLSX generation", async () => {
+    const packageJson = JSON.parse(await fs.readFile("package.json", "utf8")) as {
+      dependencies?: Record<string, string>;
+      devDependencies?: Record<string, string>;
+    };
+    const generator = await fs.readFile("scripts/generate-gate4b.mjs", "utf8");
+
+    expect(packageJson.dependencies?.exceljs).toBe("4.4.0");
+    expect(packageJson.devDependencies?.fflate).toBe("0.8.2");
+    expect(generator).not.toContain("@oai/artifact-tool");
   });
 
   it("keeps workbook semantics deterministic", () => {
@@ -145,13 +173,6 @@ describe("Gate 4B normalized XLSX", () => {
   });
 });
 
-function columnName(columnCount: number): string {
-  let value = columnCount;
-  let name = "";
-  while (value > 0) {
-    value -= 1;
-    name = String.fromCharCode(65 + (value % 26)) + name;
-    value = Math.floor(value / 26);
-  }
-  return name;
+function worksheetNumber(path: string): number {
+  return Number(path.match(/sheet(\d+)\.xml$/)?.[1]);
 }
