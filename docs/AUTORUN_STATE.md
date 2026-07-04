@@ -23,6 +23,7 @@ last_commands:
   - corepack pnpm build
   - corepack pnpm test
   - git diff --check
+  - git status --short
 last_test_results:
   runtime: Node v24.14.1; pnpm 11.7.0
   frozen_install: PASS
@@ -32,6 +33,7 @@ last_test_results:
   build: PASS
   full_tests: PASS (46/46)
   diff_check: PASS
+  workflow_docs_check: PASS (documentation-only; code tests not rerun)
 reviewer_verdict: PENDING
-updated_at: 2026-07-04T11:50:56+08:00
+updated_at: 2026-07-04T13:27:58+08:00
 ```

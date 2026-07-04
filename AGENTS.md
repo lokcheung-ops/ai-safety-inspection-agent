@@ -38,3 +38,20 @@
 - Do not push, deploy, or submit to Kaggle automatically.
 - Read and execute only the prompt named by `active_prompt`; do not preload
   future gate prompts.
+- Every completed Main run must update `docs/AUTORUN_STATE.md` before stopping.
+- Every completed Reviewer run must update `docs/AUTORUN_STATE.md` when policy
+  permits it, or provide an exact state-transition block for Main to copy.
+- `docs/AUTORUN_STATE.md` must contain `current_gate`, `current_role`,
+  `current_state`, `last_completed_gate`, `last_verified_commit`,
+  `active_prompt`, `required_next_role`, `allowed_next_states`, `blocker`,
+  `last_commands`, `last_test_results`, `reviewer_verdict`, and `updated_at`.
+- Before Main stops, it must confirm a clean `git status --short` unless a dirty
+  tree caused BLOCKED, and record the latest relevant commit, test results,
+  next role, and active prompt in `docs/AUTORUN_STATE.md`.
+- Before Reviewer stops, it must issue PASS, PASS WITH MINOR ISSUES, FAIL, or
+  BLOCKED and state the exact next transition. If Reviewer did not update the
+  state file, Main must record the transition before continuing implementation.
+- A stale state file, missing latest relevant commit, missing reviewer verdict,
+  or Git-status conflict requires BLOCKED. Do not continue to the next gate.
+- A gate may advance only when the state file records PASS for the previous
+  gate, or PASS WITH MINOR ISSUES that the user explicitly accepted.
