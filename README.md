@@ -196,3 +196,15 @@ Potential future extensions include:
 AI Safety Inspection Agent is a practical Agents for Business capstone. It shows how agent workflows can support real HSE review work by converting messy inspection records into structured, traceable, and validated outputs.
 
 The main lesson is that useful AI agents should not only generate text. In safety-related workflows, they should preserve evidence, enforce boundaries, and make their outputs reviewable.
+
+## Demo Video
+
+A 5-minute Kaggle capstone walkthrough will cover:
+
+- the HSE inspection review problem;
+- why an agent workflow is appropriate;
+- the project architecture;
+- validation results;
+- the AI-assisted build process.
+
+YouTube link: coming soon.
