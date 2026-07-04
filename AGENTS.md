@@ -24,3 +24,17 @@
 - Any AGENTS.md change must be explicitly reported, reviewed, and committed.
 - Test-only verification oracles must never be imported by production code
   or used to generate production artifacts.
+
+## Controlled Gate Workflow
+
+- Gate prompts are stored under `prompts/`; workflow state is stored in
+  `docs/AUTORUN_STATE.md`.
+- Each run executes one state transition only. Main and Reviewer use separate
+  sessions, and Main cannot issue its own independent PASS.
+- Gate advancement requires Reviewer PASS or an explicitly accepted PASS WITH
+  MINOR ISSUES. FAIL returns control to Main for repair.
+- State conflict, failed tests, unexpected dirty files, permission failure, or
+  usage limits set the workflow to BLOCKED.
+- Do not push, deploy, or submit to Kaggle automatically.
+- Read and execute only the prompt named by `active_prompt`; do not preload
+  future gate prompts.
