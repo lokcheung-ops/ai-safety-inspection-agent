@@ -2,17 +2,16 @@
 
 ```yaml
 current_gate: Gate 3
-current_role: Reviewer
-current_state: READY_FOR_GATE_3_REVIEW
+current_role: Main
+current_state: REPAIR_REQUIRED
 last_completed_gate: Gate 3 implementation and repair
 last_verified_commit: 380a8b6518fe77a47407819f74310ee68745486c
-active_prompt: prompts/gate-3-review.md
-required_next_role: Independent Reviewer
+active_prompt: prompts/gate-3-implementation.md
+required_next_role: Main
 allowed_next_states:
-  - READY_FOR_GATE_4A
-  - REPAIR_REQUIRED
+  - READY_FOR_GATE_3_REVIEW
   - BLOCKED
-blocker: Gate 4A is blocked pending an independent Gate 3 re-review.
+blocker: Gate 4A is blocked pending complete recursive rejection of weather context, including wind-related data.
 last_commands:
   - node --version
   - corepack pnpm --version
@@ -32,6 +31,6 @@ last_test_results:
   build: PASS
   full_tests: PASS (41/41)
   diff_check: PASS
-reviewer_verdict: PENDING
-updated_at: 2026-07-04T11:41:32+08:00
+reviewer_verdict: FAIL
+updated_at: 2026-07-04T11:49:16+08:00
 ```
