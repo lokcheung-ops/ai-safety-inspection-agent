@@ -48,6 +48,8 @@ The project uses agents and agent-assisted development practices to support this
 
 ## Architecture
 
+![AI Safety Inspection Agent Architecture](assets/architecture.png)
+
 ```text
 Inspection report records
         ↓
