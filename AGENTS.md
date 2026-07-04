@@ -31,6 +31,17 @@
   the latest `origin/main` before each Main or Reviewer run.
 - Gate prompts are stored under `prompts/`; workflow state is stored in
   `docs/AUTORUN_STATE.md`.
+- Treat `docs/AUTORUN_STATE.md` after pulling `origin/main` as authoritative
+  for `active_prompt`, `required_next_role`, and `last_verified_commit`.
+  Commit hashes supplied by chat messages, copied summaries, or external
+  prompts are advisory only. If they conflict with `docs/AUTORUN_STATE.md`,
+  follow the state file, verify the recorded commit exists, and record the
+  mismatch in `last_test_results` without blocking solely because of the
+  external mismatch. Block only when the state file itself is stale, incomplete,
+  internally inconsistent, or points to a missing commit.
+- `last_verified_commit` is the latest gate-relevant implementation commit, not
+  necessarily repository `HEAD`; state-only or workflow-only commits may appear
+  after it.
 - Each run executes one state transition only. Main and Reviewer use separate
   sessions, and Main cannot issue its own independent PASS.
 - Gate advancement requires Reviewer PASS or an explicitly accepted PASS WITH
