@@ -1,18 +1,17 @@
 # Controlled Workflow State
 
 ```yaml
-current_gate: Gate 4A
-current_role: Reviewer
-current_state: READY_FOR_GATE_4A_REVIEW
-last_completed_gate: Gate 4A implementation
+current_gate: Gate 4B
+current_role: Main
+current_state: READY_FOR_GATE_4B
+last_completed_gate: Gate 4A
 last_verified_commit: d17c3585c16605c585f8bfc82dc6744a3309a4b3
-active_prompt: prompts/gate-4a-review.md
-required_next_role: Independent Reviewer
+active_prompt: prompts/gate-4b-implementation.md
+required_next_role: Main
 allowed_next_states:
-  - READY_FOR_GATE_4B
-  - REPAIR_REQUIRED
+  - READY_FOR_GATE_4B_REVIEW
   - BLOCKED
-blocker: Gate 4B is blocked pending an independent Gate 4A verdict.
+blocker: null
 last_commands:
   - node --version
   - corepack pnpm --version
@@ -35,6 +34,7 @@ last_test_results:
   full_tests: PASS (53/53)
   diff_check: PASS
   deterministic_regeneration: PASS (matching SHA-256 before and after regeneration)
-reviewer_verdict: PENDING
-updated_at: 2026-07-04T13:38:02+08:00
+  gate_4a_review: PASS (Independent Reviewer; Gate 4A 7/7, fixture 19/19, catalogue 27/27, full 53/53)
+reviewer_verdict: PASS
+updated_at: 2026-07-04T13:58:09+08:00
 ```
