@@ -27,6 +27,8 @@
 
 ## Controlled Gate Workflow
 
+- GitHub `origin/main` is the single source of truth for workflow state. Pull
+  the latest `origin/main` before each Main or Reviewer run.
 - Gate prompts are stored under `prompts/`; workflow state is stored in
   `docs/AUTORUN_STATE.md`.
 - Each run executes one state transition only. Main and Reviewer use separate
@@ -35,12 +37,31 @@
   MINOR ISSUES. FAIL returns control to Main for repair.
 - State conflict, failed tests, unexpected dirty files, permission failure, or
   usage limits set the workflow to BLOCKED.
-- Do not push, deploy, or submit to Kaggle automatically.
+- Main may commit and push implementation, generated artifacts, tests, docs,
+  and `docs/AUTORUN_STATE.md` only after the active gate's validation passes
+  and the intended commit leaves the working tree clean.
+- Independent Reviewer remains implementation-read-only. Reviewer may modify,
+  commit, and push only `docs/AUTORUN_STATE.md` to record its verdict and next
+  state.
+- Reviewer state-only commits may update `reviewer_verdict`, `current_gate`,
+  `current_role`, `current_state`, `last_completed_gate`,
+  `last_verified_commit`, `active_prompt`, `required_next_role`,
+  `allowed_next_states`, `blocker`, `last_commands`, `last_test_results`, and
+  `updated_at`.
+- Reviewer must not modify source code, tests, data, generated artifacts,
+  scripts, package files, prompts, README, `AGENTS.md`, or
+  `submission-assets` during review.
+- If Reviewer requires an implementation change, it must record FAIL or
+  BLOCKED in `docs/AUTORUN_STATE.md` and return control to Main.
+- Every Main and Reviewer run must push its permitted committed state to
+  `origin/main` before stopping, unless network or authentication failure is
+  recorded as BLOCKED.
+- Do not deploy or submit to Kaggle automatically.
 - Read and execute only the prompt named by `active_prompt`; do not preload
   future gate prompts.
 - Every completed Main run must update `docs/AUTORUN_STATE.md` before stopping.
-- Every completed Reviewer run must update `docs/AUTORUN_STATE.md` when policy
-  permits it, or provide an exact state-transition block for Main to copy.
+- Every completed Reviewer run must update, commit, and push
+  `docs/AUTORUN_STATE.md`.
 - `docs/AUTORUN_STATE.md` must contain `current_gate`, `current_role`,
   `current_state`, `last_completed_gate`, `last_verified_commit`,
   `active_prompt`, `required_next_role`, `allowed_next_states`, `blocker`,
@@ -49,8 +70,7 @@
   tree caused BLOCKED, and record the latest relevant commit, test results,
   next role, and active prompt in `docs/AUTORUN_STATE.md`.
 - Before Reviewer stops, it must issue PASS, PASS WITH MINOR ISSUES, FAIL, or
-  BLOCKED and state the exact next transition. If Reviewer did not update the
-  state file, Main must record the transition before continuing implementation.
+  BLOCKED, record the exact next transition, and push the state-only commit.
 - A stale state file, missing latest relevant commit, missing reviewer verdict,
   or Git-status conflict requires BLOCKED. Do not continue to the next gate.
 - A gate may advance only when the state file records PASS for the previous

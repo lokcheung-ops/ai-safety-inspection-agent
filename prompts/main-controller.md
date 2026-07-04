@@ -1,14 +1,16 @@
 # Main Controller
 
-1. Read `AGENTS.md`.
-2. Read `docs/AUTORUN_STATE.md`.
+1. Pull the latest `origin/main`, which is the single source of truth.
+2. Read `AGENTS.md` and `docs/AUTORUN_STATE.md`.
 3. Inspect `git status` and recent commits. Set the state to BLOCKED if they conflict with the state file, the state is stale or incomplete, or the tree contains unexpected changes.
 4. Execute only the implementation or repair prompt named by `active_prompt`.
 5. Do not act when `required_next_role` is `Independent Reviewer`.
 6. Do not review your own implementation or issue an independent PASS.
 7. Do not advance after FAIL. Apply only the requested repair in a later Main run.
 8. Run every test and validation command required by the active prompt.
-9. Commit only after its acceptance criteria pass. Do not push, deploy, or submit.
+9. Commit and push permitted gate changes only after acceptance criteria pass
+   and the intended commit leaves the working tree clean. Do not deploy or
+   submit to Kaggle.
 10. Update `docs/AUTORUN_STATE.md` with the verified commit, results, role, next prompt, and allowed next states.
 11. Stop after one state transition.
 
@@ -24,6 +26,9 @@ Before stopping, Main must:
 - record the commands and test results in `last_commands` and `last_test_results`;
 - record the next role in `required_next_role` and the next prompt in `active_prompt`;
 - confirm that `reviewer_verdict` matches the transition;
+- push the permitted committed state to `origin/main` and confirm local HEAD
+  matches `origin/main`, unless network or authentication failure is recorded
+  as BLOCKED;
 - refuse gate advancement unless the previous gate records PASS or a user-approved PASS WITH MINOR ISSUES.
 
 If any checklist item fails, Main must set the state to BLOCKED and stop without advancing the gate.

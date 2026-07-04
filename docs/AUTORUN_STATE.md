@@ -51,8 +51,9 @@ last_test_results:
   recommendation_only_model: PASS
   expected_findings_placeholders: PASS (5/5 rows labelled EXPECTATION_ONLY)
   forbidden_fields_and_context: PASS (no remark/remarks fields; no weather or safety-alert context)
+  workflow_hardening: PASS (origin/main authority, Main validated push, and Reviewer state-only push rules documented)
   diff_check: PASS
-  scope_check: PASS (Gate 4B repair only; no Gate 4C or later artifacts)
+  scope_check: PASS (workflow hardening only; Gate 4C implementation not started)
 reviewer_verdict: PASS
-updated_at: 2026-07-04T20:47:11+08:00
+updated_at: 2026-07-04T20:52:39+08:00
 ```
