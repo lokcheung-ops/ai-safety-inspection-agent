@@ -12,6 +12,8 @@
     "test:fixture": "vitest run tests/form3a/fixture.test.ts",
     "test:gate4a": "vitest run tests/form3a/normalized.test.ts",
     "generate:gate4a": "node --import tsx src/form3a/generate-gate4a.ts",
+    "test:gate4b": "vitest run tests/form3a/xlsx.test.ts",
+    "generate:gate4b": "node --import tsx scripts/generate-gate4b.mjs",
     "test": "vitest run",
     "lint": "eslint src tests",
     "typecheck": "tsc --noEmit",
