@@ -246,3 +246,9 @@ export function writeGate4aArtifacts(): void {
 export function loadNormalizedData(path = NORMALIZED_DATA_PATH): NormalizedData {
   return validateNormalizedData(JSON.parse(readFileSync(path, "utf8")));
 }
+
+export function loadExtractionReviewData(
+  path = EXTRACTION_REVIEW_CASES_PATH,
+): ExtractionReviewData {
+  return validateExtractionReviewData(JSON.parse(readFileSync(path, "utf8")));
+}
