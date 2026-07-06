@@ -103,14 +103,18 @@ function Dashboard({ dashboardData }: { dashboardData: DashboardData }) {
             <p className="eyebrow">Professional review workspace</p>
             <h1>Five weeks of inspection evidence,<br /> one traceable review.</h1>
             <p className="lede">Explore synthetic Form 3A reports, review deterministic findings, and follow every statement back to its approved source.</p>
+            <div className="intro-actions">
+              <a className="primary-action" href="#review"><Icon name="document" />Start review</a>
+              <a className="secondary-action" href="#findings">View findings <Icon name="chevron" /></a>
+            </div>
           </div>
           <div className="metric-grid" aria-label="Package counts">
             {metrics.map(([value, label]) => <div className="metric" key={label}><strong>{value}</strong><span>{label}</span></div>)}
           </div>
         </section>
 
-        <section className="report-nav card">
-          <div className="section-heading compact"><div><p className="eyebrow">Report selector</p><h2>Weekly reports</h2></div><span>5 × 4-page PDFs</span></div>
+        <section className="report-nav card" id="review">
+          <div className="section-heading compact"><div><p className="eyebrow">Step 1 · Choose a report</p><h2>Weekly reports</h2></div><span>5 × 4-page PDFs</span></div>
           <div className="report-tabs">
             {dashboardData.reports.map((report) => (
               <button className={selectedReportId === report.report_id ? "active" : ""} key={report.report_id} onClick={() => setSelectedReportId(report.report_id)} type="button">
@@ -135,8 +139,8 @@ function Dashboard({ dashboardData }: { dashboardData: DashboardData }) {
             <div className="pdf-footer"><span><Icon name="document" />4-page bilingual report</span><a href={reportPdfUrl} target="_blank" rel="noreferrer">Open PDF <Icon name="external" /></a></div>
           </article>
 
-          <aside className="card findings-panel">
-            <div className="section-heading"><div><p className="eyebrow">Safety Review Brief</p><h2>Pending findings</h2></div><span className="count-pill">5</span></div>
+          <aside className="card findings-panel" id="findings">
+            <div className="section-heading"><div><p className="eyebrow">Step 2 · Review evidence</p><h2>Pending findings</h2></div><span className="count-pill">5</span></div>
             <p className="panel-intro">Select a finding to inspect its verified evidence. No rating is changed by this viewer.</p>
             <div className="finding-list">
               {dashboardData.findings.map((finding) => <FindingCard finding={finding} key={finding.finding_id} selected={finding.finding_id === selectedFindingId} onSelect={() => chooseFinding(finding)} />)}
