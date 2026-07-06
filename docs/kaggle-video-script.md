@@ -6,7 +6,7 @@ Target duration: 4:45 to 5:00 at about 135 words per minute.
 
 **Visual**
 
-Show the project title, cover image, and the synthetic-data notice.
+Open the [public read-only dashboard](https://ai-safety-inspection-agent.vercel.app). Show the title, package counts, synthetic-data notice, and read-only notice.
 
 **Narration**
 
@@ -16,7 +16,7 @@ Construction safety report review takes time because the evidence sits across ma
 
 **Visual**
 
-Show a four-page Form 3A PDF, then highlight ratings, recommendations, dates, and page references. Display three user labels: Safety Officer, Project Manager, Auditor.
+Use the report selector to switch from R01 to R03. Scroll to the embedded four-page Form 3A PDF, then point to the report period, workforce, and combined-PDF link.
 
 **Narration**
 
@@ -28,7 +28,7 @@ Manual review becomes repetitive across several weeks. A loose summary can miss 
 
 **Visual**
 
-Show the canonical fixture, bilingual field catalogue, and a diagram from source data to generated artifacts. Keep “Synthetic data” visible.
+Show the repository architecture diagram, canonical fixture, and bilingual field catalogue. Return to the dashboard with “Synthetic data” and “Read-only” visible.
 
 **Narration**
 
@@ -54,19 +54,19 @@ This separation keeps normalization, presentation, finding analysis, and verific
 
 **Visual**
 
-Open `normalized-data.xlsx`, scroll through the frozen headers, then show an individual PDF beside the combined PDF. Open `ui-projection.json` and point to individual and combined page references.
+In the dashboard, switch among R01 to R05 and show the native PDF preview. Open the combined-PDF link in a new tab. Briefly show the workbook's frozen headers, then return to the dashboard.
 
 **Narration**
 
 The package contains 2,275 report-by-item-by-day observations and 325 weekly summaries. It preserves eight recommendations and three extraction-review cases.
 
-The workbook gives a reviewer seven structured sheets. The PDFs preserve the bilingual, page-by-page Form 3A layout. The UI projection links five reports to their four individual pages and to the correct pages in the combined PDF. It supplies data for a future interface, but this repository does not contain frontend screens.
+The workbook gives a reviewer seven structured sheets. The PDFs preserve the bilingual, page-by-page Form 3A layout. The UI projection links five reports to their four individual pages and to the correct pages in the combined PDF. This static dashboard reads those approved artifacts directly; it does not add or edit evidence.
 
 ## 3:20–4:05 | Findings and business value
 
 **Visual**
 
-Open `safety-review-brief.json`. Show the five finding titles, then zoom into the report, page, item, date, rating, recommendation, and PDF references for one finding.
+Select “Scaffold improvement followed by recurrence,” switch between its R03, R04, and R05 evidence tabs, and show the report, page, item, date, rating, recommendation, source string, and both PDF links. Then select the ladder inconsistency finding.
 
 **Narration**
 
@@ -78,7 +78,7 @@ Each finding separates verified evidence, interpretation, and suggested action. 
 
 **Visual**
 
-Show the terminal running `corepack pnpm generate:gate6` and `corepack pnpm test:gate6`. Then show `manifest.json` with artifact counts and SHA-256 values.
+Show the dashboard verification card, then the terminal running `corepack pnpm test`. Briefly show `manifest.json` with artifact counts and SHA-256 values.
 
 **Narration**
 
@@ -88,19 +88,20 @@ The final review recorded 82 passing tests. A clean frozen-lockfile installation
 
 **Visual**
 
-Show a boundary card followed by the GitHub repository and artifact links.
+Show the dashboard boundary card, then the public GitHub repository and deployment URL.
 
 **Narration**
 
-Work Package 1 does not implement OCR, ADK, MCP, weather or safety-alert context, a frontend, database, authentication, or deployment. Those remain future work and need separate validation.
+The public dashboard is a static read-only viewer. It does not implement OCR, ADK, MCP, weather or safety-alert context, a backend, database, authentication, upload, editing, or automatic rating changes. Those remain future work and need separate validation.
 
 The completed package gives Safety Officers, Project Managers, and Auditors a reproducible evidence base for inspection review. The public repository contains the source data, generated artifacts, tests, manifest, and handoff documentation.
 
 ## Recording checklist
 
 - Keep the synthetic-data notice visible when showing reports.
+- Start from `https://ai-safety-inspection-agent.vercel.app` and test it before recording.
 - Record at 1080p or higher and keep terminal text readable.
 - Use the committed files; do not edit ratings or findings for the demo.
 - Show page references resolving to the correct PDF page.
-- Avoid claiming OCR, live integrations, a deployed frontend, or operational approval.
+- Describe the frontend only as a deployed static read-only viewer; avoid claiming OCR, live integrations, backend processing, or operational approval.
 - Keep the final edit at five minutes or less.

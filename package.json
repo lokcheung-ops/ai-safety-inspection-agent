@@ -24,27 +24,35 @@
     "generate:gate5": "node --import tsx src/form3a/generate-gate5.ts",
     "test:gate6": "vitest run tests/form3a/manifest.test.ts",
     "generate:gate6": "node --import tsx src/form3a/generate-gate6.ts",
+    "dev": "vite",
+    "build:frontend": "vite build",
     "test": "vitest run",
-    "lint": "eslint src tests",
+    "lint": "eslint src tests frontend vite.config.ts",
     "typecheck": "tsc --noEmit",
-    "build": "tsc -p tsconfig.build.json"
+    "build": "tsc -p tsconfig.build.json && vite build"
   },
   "dependencies": {
     "@fontsource/noto-sans-hk": "5.2.9",
     "exceljs": "4.4.0",
     "pdfkit": "0.19.1",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
     "zod": "4.4.3"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
     "@types/node": "24.13.2",
     "@types/pdfkit": "0.17.6",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.3",
     "eslint": "10.6.0",
     "fflate": "0.8.2",
     "pdfjs-dist": "5.4.624",
     "tsx": "4.22.5",
     "typescript": "6.0.3",
     "typescript-eslint": "8.62.1",
+    "vite": "8.1.3",
     "vitest": "4.1.9"
   }
 }

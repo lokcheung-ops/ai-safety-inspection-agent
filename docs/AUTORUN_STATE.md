@@ -13,22 +13,28 @@ allowed_next_states:
 blocker: null
 last_commands:
   - git pull --ff-only origin main
-  - word-count inspection of README and three packaging documents
-  - video narration duration estimate
-  - packaging prose pattern and boundary-claim scan
+  - corepack pnpm install --frozen-lockfile
+  - corepack pnpm lint
+  - corepack pnpm typecheck
+  - corepack pnpm build
+  - corepack pnpm test
+  - corepack pnpm build:frontend
+  - browser verification at desktop and 390px mobile widths
+  - vercel deploy --prod --yes
   - git diff --check
   - git status --short
 last_test_results:
-  packaging_writeup: PASS (1041 words; under 2500-word limit)
-  packaging_video_script: PASS (532 spoken words; estimated 4:15-4:45 with demonstrations and pauses)
-  packaging_checklist: PASS
-  readme_polish: PASS (current artifact map, reproducibility commands, verified counts, review rules, and architecture boundaries)
-  claim_boundary_check: PASS (unimplemented OCR, ADK, MCP, weather, safety-alert, frontend, database, authentication, deployment, and external integration remain future work)
-  implementation_changes: NONE
+  frontend_data_regression: PASS (4 tests)
+  frontend_browser_desktop: PASS (5 reports, 5 findings, PDF and evidence switching, no console errors or horizontal overflow)
+  frontend_browser_mobile: PASS (390px viewport, no horizontal overflow)
+  frontend_build: PASS (Vite production bundle)
+  public_demo_url: https://ai-safety-inspection-agent.vercel.app
+  deployment: PASS (Vercel production alias ready)
+  claim_boundary_check: PASS (static read-only viewer; no OCR, ADK, MCP, weather, safety-alert, backend, database, authentication, upload, editing, or rating changes)
   generated_artifact_changes: NONE
   kaggle_submission: NOT PERFORMED
   video_file_created: NO
-  diff_check: PASS
+  full_validation: PASS (86 tests total: 82 Work Package 1 plus 4 frontend regression tests; lint, typecheck, full build, frontend build, and frozen-lockfile install passed)
 reviewer_verdict: PASS
-updated_at: 2026-07-05T06:16:08+08:00
+updated_at: 2026-07-06T13:38:00+08:00
 ```

@@ -6,8 +6,11 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    files: ["src/**/*.ts", "tests/**/*.ts"],
+    files: ["src/**/*.ts", "tests/**/*.ts", "frontend/**/*.ts", "frontend/**/*.tsx", "vite.config.ts"],
     languageOptions: {
+      globals: {
+        document: "readonly",
+      },
       parserOptions: {
         projectService: true,
         tsconfigRootDir: import.meta.dirname,

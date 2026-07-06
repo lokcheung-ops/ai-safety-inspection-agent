@@ -6,6 +6,8 @@ This repository contains a deterministic evidence pipeline for reviewing five sy
 
 The project supports human review. It does not make legal findings, change recorded ratings, or replace a Safety Officer's judgment.
 
+**[Open the public read-only review demo](https://ai-safety-inspection-agent.vercel.app)**
+
 ![AI Safety Inspection Agent Architecture](assets/architecture.png)
 
 ## Problem
@@ -24,7 +26,7 @@ Work Package 1 uses a synthetic five-week Form 3A dataset and an official biling
 - three extraction-review cases kept separate from safety findings;
 - a seven-sheet XLSX workbook with frozen headers;
 - five individual four-page PDFs and one combined twenty-page PDF;
-- a UI projection for report switching and page references, with no frontend implementation;
+- a UI projection for report switching and page references, displayed by a static read-only review dashboard;
 - five `Pending` Safety Review Brief findings;
 - a manifest with paths, counts, purposes, and SHA-256 checksums.
 
@@ -43,6 +45,19 @@ The Safety Review Brief identifies a repeated scaffold issue, an R04 improvement
 | [`generated/work-package-1/manifest.json`](generated/work-package-1/manifest.json) | Artifact inventory and checksums |
 
 See the [Work Package 1 handoff](docs/work-package-1-handoff.md) for the full data rules, artifact inventory, and QA notes.
+
+## Read-only demo
+
+The Vite, React, and TypeScript dashboard reads the committed manifest, UI projection, Safety Review Brief, and PDFs directly. It supports report switching, native browser PDF preview, clickable findings, evidence details, individual and combined page references, and visible verification and boundary notes.
+
+Run it locally:
+
+```bash
+corepack pnpm install --frozen-lockfile
+corepack pnpm dev
+```
+
+Build the deployable static site with `corepack pnpm build:frontend`. Vercel uses the committed `vercel.json`; no backend or environment variables are required.
 
 ## Reproduce and verify
 
@@ -74,9 +89,9 @@ corepack pnpm test
 
 ## Architecture boundaries
 
-Work Package 1 does not implement OCR, ADK, MCP, weather context, safety-alert context, a frontend, database, authentication, deployment, Kaggle submission, or external integrations. The PDFs come from approved synthetic structured data rather than scanned-document extraction.
+Work Package 1 does not implement OCR, ADK, MCP, weather context, safety-alert context, database, authentication, Kaggle submission, or external integrations. The PDFs come from approved synthetic structured data rather than scanned-document extraction.
 
-These capabilities remain future work. The committed UI projection contains data for a future interface but no screens or application code.
+Packaging adds only a deployed static read-only viewer for the approved artifacts. It has no backend, upload, editing, rating changes, production workflow, or production-readiness claim. The other capabilities remain future work.
 
 ## Submission packaging
 

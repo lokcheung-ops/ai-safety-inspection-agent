@@ -6,6 +6,7 @@
 - [ ] Confirm the GitHub repository is public and opens without authentication.
 - [ ] Read the public README from a signed-out browser session.
 - [ ] Check every README and submission-document link.
+- [ ] Open `https://ai-safety-inspection-agent.vercel.app` in a signed-out browser and test R01–R05, findings, and PDF links.
 - [ ] Confirm no secrets, private data, API keys, or local absolute paths appear in tracked files.
 - [ ] Confirm `git status --short` is empty.
 
@@ -28,7 +29,7 @@
 - [ ] Describe the users: Safety Officer, Project Manager, and Auditor.
 - [ ] Describe normalized data, workbook, PDFs, UI projection data, Safety Review Brief, and manifest.
 - [ ] Include deterministic regeneration, tests, checksums, and traceability evidence.
-- [ ] Keep OCR, ADK, MCP, weather, safety alerts, frontend, database, authentication, and deployment in the future-work section.
+- [ ] Describe the deployed frontend precisely as a static read-only viewer; keep OCR, ADK, MCP, weather, safety alerts, backend, database, authentication, and external integrations in future work.
 - [ ] Do not claim legal conclusions, accident causation, automatic rating changes, or operational approval.
 - [ ] Proofread the final Kaggle-rendered version.
 
@@ -37,7 +38,8 @@
 - [ ] Record from `docs/kaggle-video-script.md`.
 - [ ] Keep the finished video at five minutes or less.
 - [ ] Show the synthetic-data notice in report footage.
-- [ ] Show the workbook, individual and combined PDFs, UI projection data, Safety Review Brief, manifest, and verification commands.
+- [ ] Show the dashboard report selector, PDF preview, five findings, evidence details, verification card, and boundary card.
+- [ ] Show the workbook, individual and combined PDFs, manifest, and verification commands.
 - [ ] Keep terminal text and JSON references readable at normal playback speed.
 - [ ] Add captions and check technical terms, IDs, and numbers.
 - [ ] Remove notifications, account details, tokens, and unrelated browser tabs.
@@ -58,8 +60,8 @@
 - [ ] Confirm no text claims that OCR processes the PDFs.
 - [ ] Confirm no text claims a live ADK or MCP integration.
 - [ ] Confirm no text claims live weather or official safety-alert context.
-- [ ] Confirm the UI projection is described as data, not a completed frontend.
-- [ ] Confirm no text claims a database, authentication, deployment, or external integration.
+- [ ] Confirm the frontend is described as a static read-only demo viewer, not a production workflow.
+- [ ] Confirm no text claims a backend, upload, editing, database, authentication, or external integration.
 - [ ] Confirm findings remain `Pending` and ratings remain unchanged.
 - [ ] Keep extraction-review cases separate from safety findings.
 

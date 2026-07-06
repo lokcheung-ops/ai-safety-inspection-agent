@@ -6,7 +6,7 @@ AI Safety Inspection Agent is an evidence-preserving review workflow for constru
 
 A construction project can produce many inspection pages across several weeks. Safety Officers, Project Managers, and Auditors need to compare ratings, find recurring issues, check recommendations, and confirm follow-up evidence. Manual review takes time because the evidence sits across dates, items, pages, and narrative entries.
 
-This project turns a controlled five-week dataset into traceable review artifacts. It focuses on evidence handling and reproducibility rather than a conversational interface.
+This project turns a controlled five-week dataset into traceable review artifacts. A [public read-only dashboard](https://ai-safety-inspection-agent.vercel.app) presents those approved outputs without adding a backend or changing the evidence.
 
 ## The problem
 
@@ -51,7 +51,7 @@ The committed outputs include:
 - five Safety Review Brief findings;
 - one deterministic manifest.
 
-The UI projection supplies data for a future reviewer interface. This repository does not implement that frontend.
+The UI projection now drives a lightweight static reviewer dashboard. It lets a reviewer switch reports, preview individual PDFs, open the combined PDF, select a finding, and inspect its report, page, item, date, weekday, rating, recommendation, and source references. The viewer is read-only and does not add safety logic.
 
 ## Safety Review Brief
 
@@ -105,7 +105,7 @@ corepack pnpm test
 
 ## Boundaries and future work
 
-Work Package 1 does not implement OCR, ADK, MCP, live weather data, official safety-alert context, a frontend, database, authentication, deployment, Kaggle submission, or external integrations. It does not infer weather causation, make legal or accident-causation conclusions, or change ratings.
+Work Package 1 does not implement OCR, ADK, MCP, live weather data, official safety-alert context, database, authentication, Kaggle submission, or external integrations. Packaging adds a deployed static read-only viewer, not a production application: there is no backend, upload, editing, automated rating change, or operational workflow. The project does not infer weather causation or make legal, audit, compliance, or accident-causation conclusions.
 
 Later work could add reviewed document ingestion, a human approval interface, and controlled external context. Those additions would need their own evidence rules, tests, and review gates. They remain architecture boundaries rather than current features.
 
