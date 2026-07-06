@@ -82,7 +82,7 @@ Show the dashboard verification card, then the terminal running `corepack pnpm t
 
 **Narration**
 
-The final packaging review recorded 86 automated tests total: 82 Work Package 1 tests plus 4 frontend regression tests. A clean frozen-lockfile installation regenerated all artifacts byte for byte. The manifest verifies 11 artifact checksums and has no self-checksum. Reviewers also checked all 20 combined PDF pages for layout, bilingual glyphs, borders, page order, and readability.
+Final validation confirmed 97 automated tests across the Work Package 1 pipeline, MCP-style read-only evidence tools, ADK-style runner, CLI demo, and frontend regression checks. A clean frozen-lockfile installation regenerated all artifacts byte for byte. The manifest verifies 11 artifact checksums and has no self-checksum. Reviewers also checked all 20 combined PDF pages for layout, bilingual glyphs, borders, page order, and readability.
 
 ## 4:35–5:00 | Boundaries and close
 

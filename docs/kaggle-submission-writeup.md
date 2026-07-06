@@ -85,7 +85,7 @@ The product now includes a thin, deterministic ADK-style local runner and MCP-st
 
 The final Work Package 1 review recorded:
 
-- 86 automated tests total (82 Work Package 1 tests plus 4 frontend regression tests);
+- 97 automated tests across the Work Package 1 pipeline, MCP-style read-only evidence tools, ADK-style runner, CLI demo, and frontend regression checks;
 - 11 generated artifacts with valid SHA-256 checksums;
 - byte-identical regeneration after a frozen-lockfile install;
 - 20-page PDF visual QA;

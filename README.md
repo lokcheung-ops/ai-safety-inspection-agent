@@ -94,7 +94,7 @@ corepack pnpm build
 corepack pnpm test
 ```
 
-`generate:gate6` regenerates the Work Package 1 artifacts in gate order, then writes the manifest. The final packaging review confirmed 86 automated tests total (82 Work Package 1 tests plus 4 frontend regression tests), 11 valid artifact checksums, byte-identical clean regeneration, and visual QA across all 20 combined PDF pages.
+`generate:gate6` regenerates the Work Package 1 artifacts in gate order, then writes the manifest. Final validation confirmed 97 automated tests across the Work Package 1 pipeline, MCP-style read-only evidence tools, ADK-style runner, CLI demo, and frontend regression checks. It also confirmed 11 valid artifact checksums, byte-identical clean regeneration, and visual QA across all 20 combined PDF pages.
 
 ## Review rules
 

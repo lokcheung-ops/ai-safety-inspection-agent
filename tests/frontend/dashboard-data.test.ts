@@ -44,7 +44,7 @@ describe("static reviewer dashboard data", () => {
       observations: 2_275,
       summaries: 325,
       findings: 5,
-      tests: 82,
+      tests: 97,
     });
     expect(dashboardData.reports.map((report: { report_id: string }) => report.report_id)).toEqual([
       "F3A-R01",
@@ -87,11 +87,12 @@ describe("static reviewer dashboard data", () => {
     expect(dashboardData.manifest.counts.finding_evidence_reference_count).toBe(8);
     expect(dashboardData.boundaries).toEqual([
       "OCR not implemented",
-      "ADK / MCP live integration not implemented",
-      "Weather and safety-alert context are future tool context",
+      "No hosted/live ADK or MCP integration",
+      "Synthetic weather context only; no live weather API",
       "Read-only demo viewer",
+      "No upload, chatbot, backend, database, or authentication",
       "No legal, audit, compliance, or accident-causation conclusions",
-      "Ratings remain unchanged",
+      "Ratings, recommendations, and source records remain unchanged",
     ]);
   });
 });

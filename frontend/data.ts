@@ -2,11 +2,12 @@ import type { Finding, Report } from "./types.js";
 
 const boundaries = [
   "OCR not implemented",
-  "ADK / MCP live integration not implemented",
-  "Weather and safety-alert context are future tool context",
+  "No hosted/live ADK or MCP integration",
+  "Synthetic weather context only; no live weather API",
   "Read-only demo viewer",
+  "No upload, chatbot, backend, database, or authentication",
   "No legal, audit, compliance, or accident-causation conclusions",
-  "Ratings remain unchanged",
+  "Ratings, recommendations, and source records remain unchanged",
 ] as const;
 
 interface ManifestData {
@@ -37,7 +38,7 @@ export function createDashboardData(
       observations: manifest.counts.observation_count,
       summaries: manifest.counts.weekly_summary_count,
       findings: manifest.counts.finding_count,
-      tests: 82,
+      tests: 97,
     },
     reports: projection.reports,
     findings: brief.findings,
