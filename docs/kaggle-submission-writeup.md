@@ -85,7 +85,7 @@ The current repository demonstrates the data and review foundation. It does not 
 
 The final Work Package 1 review recorded:
 
-- 82 passing automated tests;
+- 86 automated tests total (82 Work Package 1 tests plus 4 frontend regression tests);
 - 11 generated artifacts with valid SHA-256 checksums;
 - byte-identical regeneration after a frozen-lockfile install;
 - 20-page PDF visual QA;
