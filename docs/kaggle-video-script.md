@@ -92,9 +92,19 @@ Show the dashboard boundary card, then the public GitHub repository and deployme
 
 **Narration**
 
-The public dashboard is a static read-only viewer. It does not implement OCR, ADK, MCP, weather or safety-alert context, a backend, database, authentication, upload, editing, or automatic rating changes. Those remain future work and need separate validation.
+The public dashboard is a static read-only viewer. The deterministic ADK-style runner and MCP-style tools are a local demonstration layer, not a hosted agent service or live integration. OCR, live weather or safety-alert context, backend, database, authentication, upload, editing, and automatic rating changes remain unimplemented and need separate validation.
 
 The completed package gives Safety Officers, Project Managers, and Auditors a reproducible evidence base for inspection review. The public repository contains the source data, generated artifacts, tests, manifest, and handoff documentation.
+
+## Optional replacement segment | Static agent trace
+
+**Visual**
+
+Open `/agent-demo`, then run `corepack pnpm adk:mcp:demo -- --report R03` in a terminal. Show the five read-only tool calls and the Weather-context Review Brief boundary notes.
+
+**Narration**
+
+This static example shows a deterministic ADK-style reviewer runner using MCP-style tools to retrieve approved evidence, PDF references, checksum verification, and synthetic Red Rainstorm review context. It drafts prompts for a human auditor; it does not call live weather services, infer causation, or edit any source rating, recommendation, or finding.
 
 ## Recording checklist
 

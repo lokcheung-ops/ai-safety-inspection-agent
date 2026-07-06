@@ -1,12 +1,14 @@
-# AI Safety Inspection Agent
+# AI Safety Inspection Evidence Review Agent
 
 Kaggle AI Agents Capstone, Agents for Business track.
 
-This repository contains a deterministic evidence pipeline for reviewing five synthetic Hong Kong Labour Department Form 3A-style construction safety reports. It converts one canonical fixture into daily observations, weekly summaries, a review workbook, bilingual PDFs, UI reference data, and an evidence-linked Safety Review Brief.
+This repository contains a deterministic evidence pipeline and a thin agent demonstration layer for reviewing five synthetic Hong Kong Labour Department Form 3A-style construction safety reports. It converts one canonical fixture into daily observations, weekly summaries, a review workbook, bilingual PDFs, UI reference data, and an evidence-linked Safety Review Brief.
 
 The project supports human review. It does not make legal findings, change recorded ratings, or replace a Safety Officer's judgment.
 
 **[Open the public read-only review demo](https://ai-safety-inspection-agent.vercel.app)**
+
+The static site also includes an [`/agent-demo`](https://ai-safety-inspection-agent.vercel.app/agent-demo) example trace. It is not an interactive chat and requires no service credentials.
 
 ![AI Safety Inspection Agent Architecture](assets/architecture.png)
 
@@ -59,6 +61,22 @@ corepack pnpm dev
 
 Build the deployable static site with `corepack pnpm build:frontend`. Vercel uses the committed `vercel.json`; no backend or environment variables are required.
 
+## ADK + MCP demonstration layer
+
+The post–Work Package 1 demo layer keeps the approved artifacts read-only:
+
+- MCP-style evidence tools expose manifest counts, Pending findings, finding evidence, report-page references, and checksum verification as structured JSON.
+- A synthetic R03 Red Rainstorm Warning Signal context supplies reviewer prompts for post-rain scaffold inspection, drainage and water accumulation, excavation stability if excavation was active, temporary works, and material storage.
+- A deterministic ADK-style local runner calls those tools and drafts a tentative Weather-context Review Brief for human review.
+
+Run the terminal example without secrets or external services:
+
+```bash
+corepack pnpm adk:mcp:demo -- --report R03
+```
+
+This demonstration does not call the Hong Kong Observatory or another weather API. It does not infer that weather caused a finding, and it cannot change ratings, recommendations, finding status, PDFs, source records, or generated evidence artifacts. The human auditor remains in control.
+
 ## Reproduce and verify
 
 Requirements:
@@ -89,9 +107,9 @@ corepack pnpm test
 
 ## Architecture boundaries
 
-Work Package 1 does not implement OCR, ADK, MCP, weather context, safety-alert context, database, authentication, Kaggle submission, or external integrations. The PDFs come from approved synthetic structured data rather than scanned-document extraction.
+Work Package 1 does not implement OCR, ADK, MCP, weather context, safety-alert context, database, authentication, Kaggle submission, or external integrations. The PDFs come from approved synthetic structured data rather than scanned-document extraction. The later demonstration layer adds only a deterministic ADK-style runner, MCP-style read-only tools, and source-controlled synthetic weather-review context; it does not alter Work Package 1.
 
-Packaging adds only a deployed static read-only viewer for the approved artifacts. It has no backend, upload, editing, rating changes, production workflow, or production-readiness claim. The other capabilities remain future work.
+Packaging adds only a static read-only viewer and example agent trace for the approved artifacts. It has no backend, upload, editing, live weather integration, rating changes, production workflow, or production-readiness claim. OCR, official SDK-hosted agent services, live external context, and the other capabilities remain future work.
 
 ## Submission packaging
 

@@ -1,8 +1,8 @@
-# AI Safety Inspection Agent
+# AI Safety Inspection Evidence Review Agent
 
 ## Project summary
 
-AI Safety Inspection Agent is an evidence-preserving review workflow for construction safety inspection records. I built it for the Kaggle AI Agents Capstone, Agents for Business track.
+AI Safety Inspection Evidence Review Agent is an evidence-preserving review workflow for construction safety inspection records. I built it for the Kaggle AI Agents Capstone, Agents for Business track.
 
 A construction project can produce many inspection pages across several weeks. Safety Officers, Project Managers, and Auditors need to compare ratings, find recurring issues, check recommendations, and confirm follow-up evidence. Manual review takes time because the evidence sits across dates, items, pages, and narrative entries.
 
@@ -79,7 +79,7 @@ Inspection review contains distinct responsibilities: normalization, aggregation
 
 This design reduces the chance that one broad prompt will mix extraction uncertainty with safety interpretation. It also creates a visible audit trail: Main implements a gate, an Independent Reviewer checks it, and the workflow state records the accepted commit and validation results.
 
-The current repository demonstrates the data and review foundation. It does not claim a live ADK or MCP runtime.
+The product now includes a thin, deterministic ADK-style local runner and MCP-style read-only tool layer. The MCP-style tools expose approved safety evidence, checksum verification, PDF references, and source-controlled synthetic R03 Red Rainstorm review context. The runner uses those tools to draft a tentative human-review brief; it does not call live HKO or weather services, implement OCR, upload, or interactive chat, or change ratings, recommendations, findings, PDFs, or source records. A human auditor remains responsible for every conclusion.
 
 ## Verification
 
@@ -105,7 +105,7 @@ corepack pnpm test
 
 ## Boundaries and future work
 
-Work Package 1 does not implement OCR, ADK, MCP, live weather data, official safety-alert context, database, authentication, Kaggle submission, or external integrations. Packaging adds a deployed static read-only viewer, not a production application: there is no backend, upload, editing, automated rating change, or operational workflow. The project does not infer weather causation or make legal, audit, compliance, or accident-causation conclusions.
+Work Package 1 does not implement OCR, ADK, MCP, live weather data, official safety-alert context, database, authentication, Kaggle submission, or external integrations. The later demo layer is local and deterministic rather than an official SDK-hosted service. Packaging adds a static read-only viewer, not a production application: there is no backend, upload, editing, automated rating change, or operational workflow. The project does not infer weather causation or make legal, audit, compliance, or accident-causation conclusions.
 
 Later work could add reviewed document ingestion, a human approval interface, and controlled external context. Those additions would need their own evidence rules, tests, and review gates. They remain architecture boundaries rather than current features.
 

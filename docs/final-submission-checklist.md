@@ -29,7 +29,7 @@
 - [ ] Describe the users: Safety Officer, Project Manager, and Auditor.
 - [ ] Describe normalized data, workbook, PDFs, UI projection data, Safety Review Brief, and manifest.
 - [ ] Include deterministic regeneration, tests, checksums, and traceability evidence.
-- [ ] Describe the deployed frontend precisely as a static read-only viewer; keep OCR, ADK, MCP, weather, safety alerts, backend, database, authentication, and external integrations in future work.
+- [ ] Describe the deterministic ADK-style runner and MCP-style tools as a local demonstration layer; keep OCR, official SDK-hosted agent services, live weather, safety alerts, backend, database, authentication, and external integrations in future work.
 - [ ] Do not claim legal conclusions, accident causation, automatic rating changes, or operational approval.
 - [ ] Proofread the final Kaggle-rendered version.
 
@@ -58,7 +58,7 @@
 ## Boundary check
 
 - [ ] Confirm no text claims that OCR processes the PDFs.
-- [ ] Confirm no text claims a live ADK or MCP integration.
+- [ ] Confirm no text claims the deterministic ADK-style runner or MCP-style tools are hosted, live, or production integrations.
 - [ ] Confirm no text claims live weather or official safety-alert context.
 - [ ] Confirm the frontend is described as a static read-only demo viewer, not a production workflow.
 - [ ] Confirm no text claims a backend, upload, editing, database, authentication, or external integration.

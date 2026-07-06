@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 
+import { AgentDemo } from "./AgentDemo.js";
 import {
   labelFindingType,
   loadDashboardData,
@@ -94,7 +95,10 @@ function Dashboard({ dashboardData }: { dashboardData: DashboardData }) {
           <span className="brand-mark"><Icon name="shield" /></span>
           <span><strong>AI Safety Inspection Agent</strong><small>Synthetic Form 3A Review Package</small></span>
         </div>
-        <div className="read-only"><span />Public demo · Read-only</div>
+        <div className="header-actions">
+          <a className="agent-demo-link" href="/agent-demo">Agent demo</a>
+          <div className="read-only"><span />Public demo · Read-only</div>
+        </div>
       </header>
 
       <main>
@@ -193,7 +197,7 @@ function Dashboard({ dashboardData }: { dashboardData: DashboardData }) {
   );
 }
 
-export function App() {
+function DashboardLoader() {
   const [dashboardData, setDashboardData] = useState<DashboardData | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -206,4 +210,9 @@ export function App() {
   if (error) return <main className="load-state"><h1>Review package unavailable</h1><p>{error}</p></main>;
   if (!dashboardData) return <main className="load-state"><p className="eyebrow">Loading verified package</p><h1>Preparing review workspace…</h1></main>;
   return <Dashboard dashboardData={dashboardData} />;
+}
+
+export function App() {
+  if (window.location.pathname === "/agent-demo") return <AgentDemo />;
+  return <DashboardLoader />;
 }
